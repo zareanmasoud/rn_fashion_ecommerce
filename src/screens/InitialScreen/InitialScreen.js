@@ -1,6 +1,6 @@
 import React from 'react';
 import {View} from 'react-native';
-import {Loader} from '../../components/Loader';
+import {Loader} from 'lib/components/Loader';
 import styles from './styles';
 import {HOME_SCREEN} from "../routes/constants";
 // import PropTypes from 'prop-types';
@@ -10,7 +10,7 @@ export class InitialScreen extends React.Component {
     super(props);
 
     // temporarily
-    this.props.navigation.navigate(HOME_SCREEN);
+    setTimeout(() => this.props.navigation.navigate(HOME_SCREEN), 1000);
   }
 
   render() {

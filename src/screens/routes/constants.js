@@ -1,5 +1,5 @@
 export const INITIAL_SCREEN = 'InitialScreen';
-export const PRIVATE = 'Private';
+export const MAIN = 'Main';
 
 // -------------HOME-------------//
 export const HOME = 'Home';
