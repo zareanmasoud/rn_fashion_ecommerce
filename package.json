@@ -7,6 +7,9 @@
     "ios": "react-native run-ios",
     "start": "react-native start --reset-cache",
     "test": "jest",
+    "lint": "eslint *.js **/*.js",
+    "images": "node scripts/images.js",
+    "fonts": "node scripts/fonts.js",
     "link-lib": "cd src/lib && yarn link && cd ../.. && yarn link lib",
     "link-res": "cd src/res && yarn link && cd ../.. && yarn link res"
   },
