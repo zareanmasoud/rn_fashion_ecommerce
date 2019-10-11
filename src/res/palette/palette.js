@@ -1,6 +1,12 @@
-import colors from './colors';
+import colors from '../colors';
+import {shadow} from "./shadow";
 
-const palette = {
+export const palette = {
+  shadow: function (type) {
+    return {
+      ...shadow(type)
+    }
+  },
   heading: {
     color: colors.title,
     fontSize: 20,
@@ -12,5 +18,3 @@ const palette = {
     textAlign: 'center'
   }
 };
-
-export default palette;

@@ -11,12 +11,13 @@ const MainNavigator = createStackNavigator({
     [PRODUCT_SCREEN]: {
       screen: ProductScreen,
     },
-  }, {
-    headerMode: 'none',
-    navigationOptions: {
-      headerVisible: false,
-    },
   },
+  // {
+  //   headerMode: 'none',
+  //   navigationOptions: {
+  //     headerVisible: false,
+  //   },
+  // },
 );
 
 export default MainNavigator;

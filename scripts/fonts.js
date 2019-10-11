@@ -2,7 +2,7 @@ const fs = require('fs')
 
 const fontFileNames = () => {
   const array = fs
-    .readdirSync('src/res/fonts')
+    .readdirSync('src/res/fonts/fonts')
     .map((file) => {
       return file.replace('.ttf', '')
     })
@@ -18,14 +18,12 @@ const generate = () => {
     })
     .join(',\n  ')
 
-  const string = `const fonts = {
+  const string = `export const fonts = {
   ${properties}
-}
-
-export default fonts
+};
 `
 
-  fs.writeFileSync('src/res/fonts.js', string, 'utf8')
+  fs.writeFileSync('src/res/fonts/fonts.js', string, 'utf8')
 }
 
 generate()

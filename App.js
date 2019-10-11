@@ -7,26 +7,16 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StyleSheet, StatusBar} from 'react-native';
 import NavigationContainer from './src/screens/routes/container';
-import R from 'res/R';
+import {ScreenContentFrame} from './src/lib/components/ScreenContentFrame';
 
 const App: () => React$Node = () => {
   return (
-    <>
-      <StatusBar barStyle="dark-content" backgroundColor={R.colors.title}/>
-      <SafeAreaView style={styles.container}>
-        <NavigationContainer/>
-      </SafeAreaView>
-    </>
+    <ScreenContentFrame>
+      <NavigationContainer/>
+    </ScreenContentFrame>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
 
 export default App;
 
