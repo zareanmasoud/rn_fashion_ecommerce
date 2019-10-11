@@ -1,19 +1,19 @@
 import React from 'react';
-import {ConcreteNavbar} from "../ConcreteNavbar";
+import {MainNavbar} from "../MainNavbar";
 // import styles from './styles';
 // import PropTypes from 'prop-types';
 
-export const Header = props => {
+export const MainHeader = props => {
   const {noBackButton, navigation} = props;
   return (
     <>
-      <ConcreteNavbar navigation={navigation} noBackButton={noBackButton}/>
+      <MainNavbar navigation={navigation} noBackButton={noBackButton}/>
       {/*<SelectMenuByGender/>*/}
     </>
   );
 };
 
-// Header.propTypes = {
+// MainHeader.propTypes = {
 //   navigation: PropTypes.object,
 // };
 

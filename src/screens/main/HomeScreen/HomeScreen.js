@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
-import {Header} from "lib/components/Header";
+import {MainHeader} from 'features/layout/MainHeader';
+import {Products} from "features/home/Products";
 // import styles from './styles';
 
 export class HomeScreen extends Component {
@@ -11,17 +11,16 @@ export class HomeScreen extends Component {
   }
 
   render() {
+    const {navigation} = this.props;
     return (
-      <View style={{flex: 1, backgroundColor: 'red'}}>
-
-      </View>
+      <Products navigation={navigation}/>
     );
   };
 
   static navigationOptions = ({navigation}) => {
     const {params = {}} = navigation.state;
     return {
-      header: <Header navigation={params.navigation} noBackButton/>,
+      header: <MainHeader navigation={params.navigation} noBackButton/>,
     };
   };
 }

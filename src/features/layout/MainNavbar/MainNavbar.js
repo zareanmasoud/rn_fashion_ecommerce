@@ -1,8 +1,8 @@
 import React from 'react';
-import {Navbar} from "./Navbar";
+import {Navbar} from "lib/components/Navbar";
 import R from "res/R";
 
-export const ConcreteNavbar = props => {
+export const MainNavbar = props => {
   const {noBackButton, navigation} = props;
   return (
     <Navbar
