@@ -2,7 +2,7 @@ import colors from '../colors';
 import {shadow} from './shadow';
 
 export const palette = {
-  shadow: function(type) {
+  shadow(type) {
     return {
       ...shadow(type),
     };

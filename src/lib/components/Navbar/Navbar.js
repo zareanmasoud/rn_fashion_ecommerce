@@ -33,6 +33,6 @@ const renderEmptyView = () => {
 const renderButtonOne = (noBackButton, backButton, logoButton) => {
   if (noBackButton) {
     if (logoButton) return renderButton(logoButton);
-    else return renderEmptyView();
-  } else return renderButton(backButton);
+    return renderEmptyView();
+  } return renderButton(backButton);
 };

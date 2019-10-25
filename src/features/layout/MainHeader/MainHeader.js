@@ -8,7 +8,7 @@ export const MainHeader = props => {
   return (
     <>
       <MainNavbar navigation={navigation} noBackButton={noBackButton} />
-      {/*<SelectMenuByGender/>*/}
+      {/* <SelectMenuByGender/> */}
     </>
   );
 };
