@@ -1,11 +1,16 @@
 {
   "name": "rn_fashion_ecommerce",
   "version": "0.0.1",
+  "main": "lib/index.js",
   "private": true,
   "scripts": {
+    "build": "babel src/ -d lib/",
+    "prepublish": "yarn run build",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start --reset-cache",
+    "flow": "node_modules/.bin/flow",
+    "flow-stop": "node_modules/.bin/flow stop",
     "test": "jest",
     "lint": "eslint *.js **/*.js",
     "images": "node scripts/images.js",
@@ -25,10 +30,13 @@
     "react-navigation-stack": "^1.9.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.0",
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-flow": "^7.0.0",
     "@babel/runtime": "^7.5.0",
     "@react-native-community/eslint-config": "^0.0.3",
     "babel-jest": "^24.1.0",
+    "flow-bin": "^0.105.0",
     "jest": "^24.1.0",
     "metro-react-native-babel-preset": "^0.51.1",
     "react-test-renderer": "16.8.1"
