@@ -7,8 +7,8 @@
  */
 
 import React from 'react';
-import NavigationContainer from './src/screens/routes/container';
-import {ScreenContentFrame} from './src/lib/components/ScreenContentFrame';
+import NavigationContainer from 'screens/routes/container';
+import {ScreenContentFrame} from 'lib/components/ScreenContentFrame';
 
 const App: () => React$Node = () => {
   return (

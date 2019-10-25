@@ -1,4 +1,44 @@
 module.exports = {
+  parserOptions: {
+    ecmaVersion: 6,
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
+  },
+  rules: {
+    'prettier/prettier': 'error',
+    'react/jsx-filename-extension': [
+      1,
+      {
+        extensions: ['.js', '.jsx'],
+      },
+    ],
+    'react/prop-types': [
+      'error',
+      {
+        ignore: ['navigation'],
+      },
+    ],
+    'react-native/no-unused-styles': 2,
+    'react-native/split-platform-components': 2,
+    'react-native/no-inline-styles': 2,
+    'react-native/no-color-literals': 2,
+    'react-native/no-raw-text': 2,
+  },
+  env: {
+    jest: true,
+  },
+  parser: 'babel-eslint',
   root: true,
-  extends: '@react-native-community',
+  extends: [
+    'standard',
+    'airbnb',
+    'airbnb/hooks',
+    'prettier',
+    'prettier/flowtype',
+    'prettier/react',
+    'prettier/standard',
+  ],
+  plugins: ['react', 'react-native', 'flowtype', 'prettier', 'standard'],
 };
