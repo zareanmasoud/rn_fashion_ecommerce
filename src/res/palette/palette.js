@@ -1,20 +1,20 @@
 import colors from '../colors';
-import {shadow} from "./shadow";
+import {shadow} from './shadow';
 
 export const palette = {
-  shadow: function (type) {
+  shadow: function(type) {
     return {
-      ...shadow(type)
-    }
+      ...shadow(type),
+    };
   },
   heading: {
     color: colors.title,
     fontSize: 20,
-    textAlign: 'center'
+    textAlign: 'center',
   },
   text: {
     color: colors.text,
     fontSize: 17,
-    textAlign: 'center'
-  }
+    textAlign: 'center',
+  },
 };

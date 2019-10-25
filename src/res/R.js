@@ -9,7 +9,7 @@ const R = {
   images,
   colors,
   palette,
-  fonts
+  fonts,
 };
 
 export default R;

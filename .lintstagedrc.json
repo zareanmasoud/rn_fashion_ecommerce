@@ -1,14 +1,9 @@
 {
-  "lint-staged": {
-    "*.+(js|jsx)": [
-      "eslint --fix",
-      "git add",
-      "node_modules/.bin/flow",
-      "jest --bail --findRelatedTests"
-    ],
-    "*.+(js|jsx|json|css|md)": [
-      "prettier --write",
-      "git add"
-    ]
-  }
+  "*.+(js|jsx)": [
+    "eslint --fix",
+    "git add",
+    "node_modules/.bin/flow",
+    "jest --bail --findRelatedTests"
+  ],
+  "*.+(js|jsx|json|css|md)": ["prettier --write", "git add"]
 }

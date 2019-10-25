@@ -2,7 +2,7 @@ import React from 'react';
 import {View} from 'react-native';
 import {Loader} from 'lib/components/Loader';
 import styles from './styles';
-import {HOME_SCREEN} from "../routes/constants";
+import {HOME_SCREEN} from '../routes/constants';
 // import PropTypes from 'prop-types';
 
 export class InitialScreen extends React.Component {
@@ -16,7 +16,7 @@ export class InitialScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Loader/>
+        <Loader />
       </View>
     );
   }

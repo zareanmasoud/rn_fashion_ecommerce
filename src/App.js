@@ -13,10 +13,9 @@ import {ScreenContentFrame} from 'lib/components/ScreenContentFrame';
 const App: () => React$Node = () => {
   return (
     <ScreenContentFrame>
-      <NavigationContainer/>
+      <NavigationContainer />
     </ScreenContentFrame>
   );
 };
 
 export default App;
-

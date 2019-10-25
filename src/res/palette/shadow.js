@@ -1,4 +1,4 @@
-export const shadow = (type) => {
+export const shadow = type => {
   let obj = {};
   switch (type) {
     case 'narrow':
