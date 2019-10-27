@@ -8,6 +8,7 @@ module.exports = {
   },
   rules: {
     'prettier/prettier': 'error',
+    'import/no-extraneous-dependencies': ['error', {packageDir: './'}],
     'react/jsx-filename-extension': [
       1,
       {
@@ -20,6 +21,7 @@ module.exports = {
         ignore: ['navigation'],
       },
     ],
+    'react/jsx-props-no-spreading': 'off',
     'react-native/no-unused-styles': 2,
     'react-native/split-platform-components': 2,
     'react-native/no-inline-styles': 2,
@@ -39,6 +41,8 @@ module.exports = {
     'prettier/flowtype',
     'prettier/react',
     'prettier/standard',
+    'plugin:prettier/recommended',
+    'eslint-config-prettier',
   ],
   plugins: ['react', 'react-native', 'flowtype', 'prettier', 'standard'],
 };

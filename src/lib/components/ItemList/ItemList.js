@@ -1,36 +1,41 @@
 import React from 'react';
 import {View, FlatList} from 'react-native';
-import {Item} from "./Item";
+import Item from "./Item";
 import styles from './styles';
+import type {ItemModel} from "./Item/model";
 
-export const ItemList = props => {
-  const {data, navigation} = props;
+const renderItem = (item, index) => {
   return (
-    <View style={styles.container}>
-      {
-        renderFlatList(data, navigation)
-      }
-    </View>
+    <Item
+      key={index}
+      item={item}
+    />
   );
 };
 
-const renderFlatList = (data, navigation) => {
+const renderFlatList = (data) => {
   return (
     <FlatList
       data={data}
       keyExtractor={(item, index) => index.toString()}
       scrollEnabled={false}
-      renderItem={({item, index}) => renderItem(item, index, navigation)}
+      renderItem={({item, index}) => renderItem(item, index)}
     />
   )
 };
 
-const renderItem = (item, index, navigation) => {
+type Props = {
+  data: ItemModel[],
+};
+
+const ItemList = ({data}: Props) => {
   return (
-    <Item
-      key={index}
-      item={item}
-      navigation={navigation}
-    />
+    <View style={styles.container}>
+      {
+        renderFlatList(data)
+      }
+    </View>
   );
 };
+
+export default ItemList;

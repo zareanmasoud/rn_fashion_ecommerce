@@ -1,7 +1,15 @@
-export const images = {
-  back_button: require('./images/back_button.png'),
-  cart_button: require('./images/cart_button.png'),
-  logo_button: require('./images/logo_button.png'),
-  product_1: require('./images/product_1.png'),
-  product_2: require('./images/product_2.png'),
+import backButton from './images/back_button.png';
+import cartButton from './images/cart_button.png';
+import logoButton from './images/logo_button.png';
+import product1 from './images/product_1.png';
+import product2 from './images/product_2.png';
+
+const images = {
+  backButton,
+  cartButton,
+  logoButton,
+  product1,
+  product2,
 };
+
+export default images;

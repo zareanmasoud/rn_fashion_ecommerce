@@ -1,7 +1,7 @@
 import colors from '../colors';
 import {shadow} from './shadow';
 
-export const palette = {
+const palette = {
   shadow(type) {
     return {
       ...shadow(type),
@@ -18,3 +18,5 @@ export const palette = {
     textAlign: 'center',
   },
 };
+
+export default palette;

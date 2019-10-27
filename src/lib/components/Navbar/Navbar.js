@@ -1,18 +1,7 @@
 import React from 'react';
 import {Image, TouchableOpacity, View} from 'react-native';
 import styles from "./styles";
-
-export const Navbar = props => {
-  const {noBackButton, backButton, buttonTwo, logoButton} = props;
-  return (
-    <View style={styles.container}>
-      {[
-        renderButtonOne(noBackButton, backButton, logoButton),
-        renderButton(buttonTwo)
-      ]}
-    </View>
-  );
-};
+import type {Button} from './model';
 
 const renderButton = button => {
   return (
@@ -30,9 +19,34 @@ const renderEmptyView = () => {
   )
 };
 
-const renderButtonOne = (noBackButton, backButton, logoButton) => {
-  if (noBackButton) {
+const renderButtonOne = (backButton, logoButton) => {
+  if (backButton === undefined) {
     if (logoButton) return renderButton(logoButton);
     return renderEmptyView();
   } return renderButton(backButton);
 };
+
+type Props = {
+  backButton?: Button,
+  logoButton?: Button,
+  buttonTwo: Button,
+};
+
+// The abstract Navbar
+const Navbar = ({backButton, buttonTwo, logoButton}: Props) => {
+  return (
+    <View style={styles.container}>
+      {[
+        renderButtonOne(backButton, logoButton),
+        renderButton(buttonTwo)
+      ]}
+    </View>
+  );
+};
+
+Navbar.defaultProps = {
+  backButton: undefined,
+  logoButton: undefined,
+};
+
+export default Navbar;

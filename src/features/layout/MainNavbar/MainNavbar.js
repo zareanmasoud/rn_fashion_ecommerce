@@ -1,36 +1,51 @@
 import React from 'react';
-import {Navbar} from 'lib/components/Navbar';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import Navbar from 'lib/components/Navbar';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import R from 'res/R';
-
-export const MainNavbar = props => {
-  const {noBackButton, navigation} = props;
-  return (
-    <Navbar
-      noBackButton={noBackButton}
-      backButton={getBackButton(navigation)}
-      buttonTwo={getButtonTwo()}
-      logoButton={getLogoButton()}
-    />
-  );
-};
+import {withNavigation} from 'react-navigation';
 
 const getBackButton = navigation => {
   return {
     action: () => navigation.pop(),
-    src: R.images.back_button,
+    src: R.images.backButton,
   };
 };
 
 const getButtonTwo = () => {
   return {
     action: () => {},
-    src: R.images.cart_button,
+    src: R.images.cartButton,
   };
 };
 
 const getLogoButton = () => {
   return {
     action: () => {},
-    src: R.images.logo_button,
+    src: R.images.logoButton,
   };
 };
+
+type Props = {
+  noBackButton?: boolean,
+};
+
+// The concrete Navbar
+const MainNavbar = ({navigation, noBackButton}: Props) => {
+  const backButton = {
+    backButton: getBackButton(navigation),
+  };
+  return (
+    <Navbar
+      {...(!noBackButton && backButton)}
+      buttonTwo={getButtonTwo()}
+      logoButton={getLogoButton()}
+    />
+  );
+};
+
+MainNavbar.defaultProps = {
+  noBackButton: false,
+};
+
+export default withNavigation(MainNavbar);

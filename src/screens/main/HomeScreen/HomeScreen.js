@@ -1,24 +1,20 @@
 import React, {Component} from 'react';
-import {MainHeader} from 'features/layout/MainHeader';
-import {Products} from 'features/home/Products';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import HomeHeader from 'features/home/layout/HomeHeader';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import Products from 'features/home/Products';
 // import styles from './styles';
 
-export class HomeScreen extends Component {
-  constructor(props) {
-    super(props);
-    const {navigation} = this.props;
-    navigation.setParams({navigation});
-  }
-
-  render() {
-    const {navigation} = this.props;
-    return <Products navigation={navigation} />;
-  }
-
-  static navigationOptions = ({navigation}) => {
-    const {params = {}} = navigation.state;
+class HomeScreen extends Component {
+  static navigationOptions = () => {
     return {
-      header: <MainHeader navigation={params.navigation} noBackButton />,
+      header: <HomeHeader />,
     };
   };
+
+  render() {
+    return <Products />;
+  }
 }
+
+export default HomeScreen;

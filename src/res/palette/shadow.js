@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/prefer-default-export
 export const shadow = type => {
   let obj = {};
   switch (type) {
@@ -15,6 +16,14 @@ export const shadow = type => {
         height: 3,
         shadowRadius: 3,
         elevation: 2,
+      };
+      break;
+    default:
+      obj = {
+        width: 0,
+        height: 2,
+        shadowRadius: 0,
+        elevation: 1,
       };
       break;
   }

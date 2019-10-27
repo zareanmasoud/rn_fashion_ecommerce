@@ -1,14 +1,11 @@
 import React, {Component} from 'react';
-import {ItemList} from 'lib/components/ItemList';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import ItemList from 'lib/components/ItemList';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import R from 'res/R';
 // import styles from './styles';
 
-export class Products extends Component {
-  render() {
-    const {navigation} = this.props;
-    return <ItemList data={this.getItems()} navigation={navigation} />;
-  }
-
+class Products extends Component {
   getItems = () => {
     return [
       {
@@ -16,15 +13,21 @@ export class Products extends Component {
         title: 'Title',
         description: 'Description',
         discount_code: 'X9E2AD',
-        photo: R.images.product_1,
+        photo: R.images.product1,
       },
       {
         id: '2',
         title: 'Title',
         description: 'Description',
         discount_code: 'X9E2AD',
-        photo: R.images.product_2,
+        photo: R.images.product2,
       },
     ];
   };
+
+  render() {
+    return <ItemList data={this.getItems()} />;
+  }
 }
+
+export default Products;

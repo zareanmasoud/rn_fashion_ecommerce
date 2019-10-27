@@ -1,21 +1,22 @@
 import React from 'react';
 import {ActivityIndicator, View} from 'react-native';
 import styles from './styles';
-// import PropTypes from 'prop-types';
 
-export const Loader = props => {
+type Props = {
+  size?: 'small' | 'large',
+};
+
+const Loader = ({size}: Props) => {
   return (
     <View style={styles.loading}>
-      <ActivityIndicator size={props.size}/>
+      <ActivityIndicator size={size}/>
     </View>
   );
 };
 
 Loader.defaultProps = {
-  size: 'small'
+  size: 'small',
 };
 
-// Loader.propTypes = {
-//   size: PropTypes.oneOf(['small', 'large'])
-// };
+export default Loader;
 

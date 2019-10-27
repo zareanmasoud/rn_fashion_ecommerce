@@ -1,8 +1,8 @@
 import strings from './strings';
-import {images} from './images';
+import images from './images';
 import colors from './colors';
-import {palette} from './palette';
-import {fonts} from './fonts';
+import palette from './palette';
+import fonts from './fonts';
 
 const R = {
   strings,

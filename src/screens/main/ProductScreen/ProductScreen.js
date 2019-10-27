@@ -1,9 +1,9 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {View} from 'react-native';
 // import styles from './styles';
 
-export class ProductScreen extends Component {
-  render() {
-    return <View />;
-  }
-}
+const ProductScreen = () => {
+  return <View />;
+};
+
+export default ProductScreen;

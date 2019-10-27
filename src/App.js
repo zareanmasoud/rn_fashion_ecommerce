@@ -7,10 +7,12 @@
  */
 
 import React from 'react';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import NavigationContainer from 'screens/routes/container';
-import {ScreenContentFrame} from 'lib/components/ScreenContentFrame';
+// eslint-disable-next-line import/no-extraneous-dependencies
+import ScreenContentFrame from 'lib/components/ScreenContentFrame';
 
-const App: () => React$Node = () => {
+const App = () => {
   return (
     <ScreenContentFrame>
       <NavigationContainer />
