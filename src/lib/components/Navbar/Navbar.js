@@ -1,29 +1,28 @@
 import React from 'react';
 import {Image, TouchableOpacity, View} from 'react-native';
-import styles from "./styles";
+import styles from './styles';
 import type {Button} from './model';
 
 const renderButton = button => {
   return (
     <TouchableOpacity onPress={() => button.action()}>
       <View style={styles.buttonView}>
-        <Image source={button.src} style={styles.buttonImg}/>
+        <Image source={button.src} style={styles.buttonImg} />
       </View>
     </TouchableOpacity>
-  )
+  );
 };
 
 const renderEmptyView = () => {
-  return (
-    <View style={styles.emptyView}/>
-  )
+  return <View style={styles.emptyView} />;
 };
 
 const renderButtonOne = (backButton, logoButton) => {
   if (backButton === undefined) {
     if (logoButton) return renderButton(logoButton);
     return renderEmptyView();
-  } return renderButton(backButton);
+  }
+  return renderButton(backButton);
 };
 
 type Props = {
@@ -36,10 +35,7 @@ type Props = {
 const Navbar = ({backButton, buttonTwo, logoButton}: Props) => {
   return (
     <View style={styles.container}>
-      {[
-        renderButtonOne(backButton, logoButton),
-        renderButton(buttonTwo)
-      ]}
+      {[renderButtonOne(backButton, logoButton), renderButton(buttonTwo)]}
     </View>
   );
 };

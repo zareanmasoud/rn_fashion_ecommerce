@@ -37,7 +37,11 @@ yarn-error.log
 
 # babel
 #
-lib
+build
+
+# coverage
+#
+coverage
 
 # BUCK
 buck-out/

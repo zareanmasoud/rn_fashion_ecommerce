@@ -1,19 +1,14 @@
 import React from 'react';
 import {View, FlatList} from 'react-native';
-import Item from "./Item";
+import Item from './Item';
 import styles from './styles';
-import type {ItemModel} from "./Item/model";
+import type {ItemModel} from './Item/model';
 
 const renderItem = (item, index) => {
-  return (
-    <Item
-      key={index}
-      item={item}
-    />
-  );
+  return <Item key={index} item={item} />;
 };
 
-const renderFlatList = (data) => {
+const renderFlatList = data => {
   return (
     <FlatList
       data={data}
@@ -21,7 +16,7 @@ const renderFlatList = (data) => {
       scrollEnabled={false}
       renderItem={({item, index}) => renderItem(item, index)}
     />
-  )
+  );
 };
 
 type Props = {
@@ -29,13 +24,7 @@ type Props = {
 };
 
 const ItemList = ({data}: Props) => {
-  return (
-    <View style={styles.container}>
-      {
-        renderFlatList(data)
-      }
-    </View>
-  );
+  return <View style={styles.container}>{renderFlatList(data)}</View>;
 };
 
 export default ItemList;

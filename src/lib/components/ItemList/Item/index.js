@@ -1,3 +1,3 @@
 import Item from './Item';
 
-export {Item as default}
+export {Item as default};

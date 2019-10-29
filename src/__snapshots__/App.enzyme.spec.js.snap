@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App tested with airbnb enzyme App mount with enzyme 1`] = `
+<ScreenContentFrame>
+  <NavigationContainer
+    theme="light"
+  />
+</ScreenContentFrame>
+`;
