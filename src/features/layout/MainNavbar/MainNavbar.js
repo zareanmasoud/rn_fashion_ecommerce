@@ -5,26 +5,26 @@ import Navbar from 'lib/components/Navbar';
 import R from 'res/R';
 import {withNavigation} from 'react-navigation';
 
-const getBackButton = navigation => {
+function getBackButton(navigation) {
   return {
     action: () => navigation.pop(),
     src: R.images.backButton,
   };
-};
+}
 
-const getButtonTwo = () => {
+function getButtonTwo() {
   return {
     action: () => {},
     src: R.images.cartButton,
   };
-};
+}
 
-const getLogoButton = () => {
+function getLogoButton() {
   return {
     action: () => {},
     src: R.images.logoButton,
   };
-};
+}
 
 type Props = {
   noBackButton?: boolean,

@@ -9,7 +9,7 @@ type Props = {
 const Loader = ({size}: Props) => {
   return (
     <View style={styles.loading}>
-      <ActivityIndicator size={size}/>
+      <ActivityIndicator size={size} />
     </View>
   );
 };
@@ -19,4 +19,3 @@ Loader.defaultProps = {
 };
 
 export default Loader;
-

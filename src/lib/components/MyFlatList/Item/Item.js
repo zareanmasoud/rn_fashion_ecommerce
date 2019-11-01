@@ -3,10 +3,14 @@ import {Image, TouchableOpacity, View} from 'react-native';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import {PRODUCT_SCREEN} from 'screens/routes/constants';
 import {withNavigation} from 'react-navigation';
-import styles from './styles';
 import type {ItemModel} from './model';
+import styles from './styles';
 
-const renderItem = (item, navigation) => {
+type Props = {
+  item: ItemModel,
+};
+
+const Item = ({item, navigation}: Props) => {
   return (
     <TouchableOpacity
       onPress={() => navigation.navigate(PRODUCT_SCREEN, {id: item.id})}>
@@ -15,14 +19,6 @@ const renderItem = (item, navigation) => {
       </View>
     </TouchableOpacity>
   );
-};
-
-type Props = {
-  item: ItemModel,
-};
-
-const Item = ({item, navigation}: Props) => {
-  return <View style={styles.container}>{renderItem(item, navigation)}</View>;
 };
 
 export default withNavigation(Item);

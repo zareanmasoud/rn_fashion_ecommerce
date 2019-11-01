@@ -3,21 +3,13 @@ import {HOME_SCREEN, PRODUCT_SCREEN} from '../routes/constants';
 import HomeScreen from './HomeScreen';
 import ProductScreen from './ProductScreen';
 
-const MainNavigator = createStackNavigator(
-  {
-    [HOME_SCREEN]: {
-      screen: HomeScreen,
-    },
-    [PRODUCT_SCREEN]: {
-      screen: ProductScreen,
-    },
+const MainNavigator = createStackNavigator({
+  [HOME_SCREEN]: {
+    screen: HomeScreen,
   },
-  // {
-  //   headerMode: 'none',
-  //   navigationOptions: {
-  //     headerVisible: false,
-  //   },
-  // },
-);
+  [PRODUCT_SCREEN]: {
+    screen: ProductScreen,
+  },
+});
 
 export default MainNavigator;

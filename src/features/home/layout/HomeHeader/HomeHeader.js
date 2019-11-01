@@ -3,13 +3,11 @@ import React from 'react';
 import MainNavbar from 'features/layout/MainNavbar';
 // import styles from './styles';
 
-const HomeHeader = () => {
+export default function HomeHeader() {
   return (
     <>
       <MainNavbar noBackButton />
       {/* <SelectMenuByGender /> */}
     </>
   );
-};
-
-export default HomeHeader;
+}

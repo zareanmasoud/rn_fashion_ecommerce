@@ -2,8 +2,6 @@ import React from 'react';
 import {View} from 'react-native';
 // import styles from './styles';
 
-const ProductScreen = () => {
+export default function ProductScreen() {
   return <View />;
-};
-
-export default ProductScreen;
+}

@@ -1,12 +1,13 @@
-import React, {Component} from 'react';
+import React from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import ItemList from 'lib/components/ItemList';
+import MyFlatList from 'lib/components/MyFlatList';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import R from 'res/R';
+import Product from './Product';
 // import styles from './styles';
 
-class Products extends Component {
-  getItems = () => {
+export default function ProductList() {
+  function getData() {
     return [
       {
         id: '1',
@@ -23,11 +24,7 @@ class Products extends Component {
         photo: R.images.product2,
       },
     ];
-  };
-
-  render() {
-    return <ItemList data={this.getItems()} />;
   }
-}
 
-export default Products;
+  return <MyFlatList data={getData()} itemComponent={Product} />;
+}

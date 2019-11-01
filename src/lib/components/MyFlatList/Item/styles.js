@@ -1,8 +1,12 @@
-import { StyleSheet } from 'react-native';
+import {StyleSheet} from 'react-native';
 // import { colors, fonts, metrics } from 'styles';
 
 const styles = StyleSheet.create({
-  container: {}
+  itemView: {},
+  itemImg: {
+    width: 200,
+    height: 250,
+  },
 });
 
 export default styles;

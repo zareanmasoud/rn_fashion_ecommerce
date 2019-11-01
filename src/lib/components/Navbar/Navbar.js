@@ -3,7 +3,7 @@ import {Image, TouchableOpacity, View} from 'react-native';
 import styles from './styles';
 import type {Button} from './model';
 
-const renderButton = button => {
+function renderButton(button) {
   return (
     <TouchableOpacity onPress={() => button.action()}>
       <View style={styles.buttonView}>
@@ -11,19 +11,19 @@ const renderButton = button => {
       </View>
     </TouchableOpacity>
   );
-};
+}
 
-const renderEmptyView = () => {
+function renderEmptyView() {
   return <View style={styles.emptyView} />;
-};
+}
 
-const renderButtonOne = (backButton, logoButton) => {
+function renderButtonOne(backButton, logoButton) {
   if (backButton === undefined) {
     if (logoButton) return renderButton(logoButton);
     return renderEmptyView();
   }
   return renderButton(backButton);
-};
+}
 
 type Props = {
   backButton?: Button,

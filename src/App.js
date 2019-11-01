@@ -12,12 +12,10 @@ import NavigationContainer from 'screens/routes/container';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import ScreenContentFrame from 'lib/components/ScreenContentFrame';
 
-const App = () => {
+export default function App() {
   return (
     <ScreenContentFrame>
       <NavigationContainer />
     </ScreenContentFrame>
   );
-};
-
-export default App;
+}
