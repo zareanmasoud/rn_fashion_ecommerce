@@ -5,41 +5,36 @@ import Navbar from 'lib/components/Navbar';
 import R from 'res/R';
 import {withNavigation} from 'react-navigation';
 
-function getBackButton(navigation) {
-  return {
-    action: () => navigation.pop(),
-    src: R.images.backButton,
-  };
-}
-
-function getButtonTwo() {
-  return {
-    action: () => {},
-    src: R.images.cartButton,
-  };
-}
-
-function getLogoButton() {
-  return {
-    action: () => {},
-    src: R.images.logoButton,
-  };
-}
-
 type Props = {
   noBackButton?: boolean,
 };
 
 // The concrete Navbar
 const MainNavbar = ({navigation, noBackButton}: Props) => {
-  const backButton = {
-    backButton: getBackButton(navigation),
+  const backButtonSpec = {
+    press: () => navigation.pop(),
+    src: R.images.backButton,
   };
+
+  const buttonTwoSpec = {
+    press: () => {},
+    src: R.images.cartButton,
+  };
+
+  const logoButtonSpec = {
+    press: () => {},
+    src: R.images.logoButton,
+  };
+
+  const backButton = {
+    backButton: backButtonSpec,
+  };
+
   return (
     <Navbar
       {...(!noBackButton && backButton)}
-      buttonTwo={getButtonTwo()}
-      logoButton={getLogoButton()}
+      buttonTwo={buttonTwoSpec}
+      logoButton={logoButtonSpec}
     />
   );
 };

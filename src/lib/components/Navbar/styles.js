@@ -12,20 +12,8 @@ export default StyleSheet.create({
     height: scale(50),
     ...R.palette.shadow('narrow'),
   },
-  buttonView: {
-    height: '100%',
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingVertical: 5,
-    paddingHorizontal: 20,
-  },
-  buttonImg: {
-    width: scale(20),
-    height: scale(20),
-    tintColor: R.colors.darkGrayTint,
-  },
   emptyView: {
     width: scale(20),
     height: scale(20),
-  }
-})
+  },
+});

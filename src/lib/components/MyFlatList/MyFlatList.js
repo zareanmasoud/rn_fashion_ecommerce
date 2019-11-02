@@ -3,16 +3,18 @@ import {FlatList} from 'react-native';
 import styles from './styles';
 import type {ItemModel} from './Item/model';
 
+let Item;
+function renderItem(data, index) {
+  return <Item key={index} data={data} />;
+}
+
 type Props = {
   data: ItemModel[],
   itemComponent: React.Node,
 };
 
 export default function MyFlatList({data, itemComponent}: Props) {
-  const Item = itemComponent;
-  function renderItem(item, index) {
-    return <Item key={index} item={item} />;
-  }
+  Item = itemComponent;
 
   return (
     <FlatList
