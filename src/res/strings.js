@@ -1,4 +1,14 @@
 const strings = {
+  home: {
+    layout: {
+      mainTabbar: {
+        home: 'Home',
+        wishlist: 'Wishlist',
+        help: 'Help',
+        profile: 'Profile',
+      },
+    },
+  },
   onboarding: {
     welcome: {
       heading: 'Welcome',
