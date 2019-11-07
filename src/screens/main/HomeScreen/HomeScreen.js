@@ -1,6 +1,6 @@
 import React from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import HomeHeader from 'features/home/layout/HomeHeader';
+import HomeHeader from 'features/home/layout/Header';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import ProductList from 'features/home/ProductList';
 // eslint-disable-next-line import/no-extraneous-dependencies

@@ -2,8 +2,8 @@ import React from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import Navbar from 'lib/components/Navbar';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import R from 'res/R';
 import {withNavigation} from 'react-navigation';
+import specs from './specs';
 
 type Props = {
   noBackButton?: boolean,
@@ -11,30 +11,15 @@ type Props = {
 
 // The concrete Navbar
 const MainNavbar = ({navigation, noBackButton}: Props) => {
-  const backButtonSpec = {
-    press: () => navigation.pop(),
-    src: R.images.backButton,
-  };
-
-  const buttonTwoSpec = {
-    press: () => {},
-    src: R.images.cartButton,
-  };
-
-  const logoButtonSpec = {
-    press: () => {},
-    src: R.images.logoButton,
-  };
-
   const backButton = {
-    backButton: backButtonSpec,
+    backButton: specs.backButtonSpec(navigation),
   };
 
   return (
     <Navbar
       {...(!noBackButton && backButton)}
-      buttonTwo={buttonTwoSpec}
-      logoButton={logoButtonSpec}
+      buttonTwo={specs.buttonTwoSpec}
+      logoButton={specs.logoButtonSpec}
     />
   );
 };
