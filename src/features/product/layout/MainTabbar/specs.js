@@ -12,10 +12,12 @@ const specs = {
     src: R.images.cartButton,
     text: R.strings.home.layout.mainTabbar.wishlist,
   },
-  addToCart: {
-    press: () => {},
-    src: R.images.logoButton,
-    text: R.strings.home.layout.mainTabbar.help,
+  addToCart(press) {
+    return {
+      press: () => press(),
+      src: R.images.logoButton,
+      text: R.strings.home.layout.mainTabbar.help,
+    };
   },
 };
 

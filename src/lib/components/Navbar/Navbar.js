@@ -3,9 +3,14 @@ import {View} from 'react-native';
 import styles from './styles';
 import type {Button} from './model';
 import NavbarButton from './NavbarButton';
+import CartButton from './CartButton';
 
 function renderButton(button) {
   return <NavbarButton spec={button} />;
+}
+
+function renderCart(button) {
+  return <CartButton spec={button} />;
 }
 
 function renderEmptyView() {
@@ -30,7 +35,7 @@ type Props = {
 const Navbar = ({backButton, buttonTwo, logoButton}: Props) => {
   return (
     <View style={styles.container}>
-      {[renderButtonOne(backButton, logoButton), renderButton(buttonTwo)]}
+      {[renderButtonOne(backButton, logoButton), renderCart(buttonTwo)]}
     </View>
   );
 };
