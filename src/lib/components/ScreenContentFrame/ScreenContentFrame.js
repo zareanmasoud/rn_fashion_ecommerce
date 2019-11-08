@@ -6,12 +6,21 @@ import styles from './styles';
 
 type Props = {
   children: ?React.Node,
+  statusBarStyle?: 'dark-content' | 'light-content',
+  statusBackgroundColor?: string,
 };
 
-const ScreenContentFrame = ({children}: Props) => {
+const ScreenContentFrame = ({
+  children,
+  statusBarStyle,
+  statusBackgroundColor,
+}: Props) => {
   return (
     <>
-      <StatusBar barStyle="dark-content" backgroundColor={R.colors.title} />
+      <StatusBar
+        barStyle={statusBarStyle}
+        backgroundColor={statusBackgroundColor}
+      />
       {/* <ImageBackground source={R.images.main_background} style={styles.imgBackground}/> // or view with backgroundColor */}
       <SafeAreaView style={styles.safeAreaView}>
         <ScrollView contentContainerStyle={styles.contentContainer}>
@@ -20,6 +29,11 @@ const ScreenContentFrame = ({children}: Props) => {
       </SafeAreaView>
     </>
   );
+};
+
+ScreenContentFrame.defaultProps = {
+  statusBarStyle: 'dark-content',
+  statusBackgroundColor: R.colors.whiteBackground,
 };
 
 export default ScreenContentFrame;
