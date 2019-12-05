@@ -13,7 +13,7 @@ type Props = {
   specs: Button[],
 };
 
-const HomeMainTabbarLayout = ({specs}: Props) => {
+const HomeTabbar = ({specs}: Props) => {
   return (
     <View style={styles.container}>
       {Object.values(specs).map((buttonSpecs, index) =>
@@ -23,4 +23,4 @@ const HomeMainTabbarLayout = ({specs}: Props) => {
   );
 };
 
-export default HomeMainTabbarLayout;
+export default HomeTabbar;

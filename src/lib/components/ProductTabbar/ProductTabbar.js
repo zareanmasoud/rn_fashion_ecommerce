@@ -19,7 +19,7 @@ type Props = {
   specs: Button[],
 };
 
-const ProductMainTabbarLayout = ({specs}: Props) => {
+const ProductTabbar = ({specs}: Props) => {
   const specsArray = Object.values(specs);
   const addToCart = specsArray.pop();
   return (
@@ -34,4 +34,4 @@ const ProductMainTabbarLayout = ({specs}: Props) => {
   );
 };
 
-export default ProductMainTabbarLayout;
+export default ProductTabbar;

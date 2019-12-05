@@ -5,8 +5,18 @@ exports[`App tested with airbnb enzyme App mount with enzyme 1`] = `
   statusBackgroundColor="#ffffff"
   statusBarStyle="dark-content"
 >
-  <NavigationContainer
-    theme="light"
-  />
+  <ContextProvider
+    value={
+      Object {
+        "addToCart": [Function],
+        "cart": 0,
+        "removeFromCart": [Function],
+      }
+    }
+  >
+    <NavigationContainer
+      theme="light"
+    />
+  </ContextProvider>
 </ScreenContentFrame>
 `;
