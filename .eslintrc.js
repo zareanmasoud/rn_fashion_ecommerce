@@ -30,6 +30,7 @@ module.exports = {
   },
   env: {
     jest: true,
+    'detox/detox': true,
   },
   parser: 'babel-eslint',
   root: true,
@@ -44,5 +45,12 @@ module.exports = {
     'plugin:prettier/recommended',
     'eslint-config-prettier',
   ],
-  plugins: ['react', 'react-native', 'flowtype', 'prettier', 'standard'],
+  plugins: [
+    'react',
+    'react-native',
+    'flowtype',
+    'prettier',
+    'standard',
+    'detox',
+  ],
 };

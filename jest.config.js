@@ -9,10 +9,10 @@ module.exports = {
   setupFiles: ['./jestSetup.js'],
   // Load setup-tests.js before test execution
   setupFilesAfterEnv: ['<rootDir>setup-tests.js'],
-  modulePathIgnorePatterns: ['<rootDir>/(build|android|ios|node_modules)/'],
+  modulePathIgnorePatterns: ['<rootDir>/(build|android|ios|node_modules|e2e)/'],
   collectCoverageFrom: [
     '<rootDir>/src/**/*.{js,jsx}',
-    '!<rootDir>/(build|android|ios|node_modules|coverage|__mocks__|src/__snapshots__)/',
+    '!<rootDir>/(build|android|ios|node_modules|coverage|__mocks__|src/__snapshots__|e2e)/',
     '!<rootDir>/(index.js|serviceWorker.js)',
   ],
   snapshotSerializers: ['enzyme-to-json/serializer'],
