@@ -7,7 +7,7 @@ export default function Badge() {
   const {cart} = useContext(CartContext);
   return (
     <View style={styles.container}>
-      <Text>{cart}</Text>
+      <Text testID="cart_text">{cart}</Text>
     </View>
   );
 }

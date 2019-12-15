@@ -6,12 +6,13 @@ import styles from './styles';
 
 type Props = {
   data: ItemModel,
+  index: number,
   spec: any,
 };
 
-const Item = ({data, spec}: Props) => {
+const Item = ({data, index, spec}: Props) => {
   return (
-    <TouchableOpacity onPress={() => spec.press()}>
+    <TouchableOpacity testID={`${index}`} onPress={() => spec.press()}>
       <View style={styles.itemView}>
         <Image source={data.photo} style={styles.itemImg} />
       </View>

@@ -1,0 +1,277 @@
+emulator: autoconfig: -skin pixel_xl_silver
+emulator: autoconfig: -skindir /Users/zareanmasoud/Programs/sdk/skins/
+emulator: autoconfig: -kernel /Users/zareanmasoud/Programs/sdk/system-images/android-29/google_apis/x86//kernel-ranchu-64
+emulator: Target arch = 'x86'
+emulator: Auto-config: -qemu -cpu qemu32
+emulator: Auto-detect: Kernel image requires new device naming scheme.
+emulator: Auto-detect: Kernel does not support YAFFS2 partitions.
+emulator: autoconfig: -ramdisk /Users/zareanmasoud/Programs/sdk/system-images/android-29/google_apis/x86//ramdisk.img
+emulator: Using initial system image: /Users/zareanmasoud/Programs/sdk/system-images/android-29/google_apis/x86//system.img
+emulator: Using initial vendor image: /Users/zareanmasoud/Programs/sdk/system-images/android-29/google_apis/x86//vendor.img
+emulator: autoconfig: -data /Users/zareanmasoud/.android/avd/Pixel_XL_API_29.avd/userdata-qemu.img
+emulator: autoconfig: -initdata /Users/zareanmasoud/.android/avd/Pixel_XL_API_29.avd/userdata.img
+emulator: autoconfig: -cache /Users/zareanmasoud/.android/avd/Pixel_XL_API_29.avd/cache.img
+emulator: autoconfig: -sdcard /Users/zareanmasoud/.android/avd/Pixel_XL_API_29.avd/sdcard.img
+emulator: Increasing RAM size to 2048MB
+emulator: VM heap size 384MB is below hardware specified minimum of 512MB,setting it to that value
+emulator: System image is read only
+emulator: ERROR: Failed to retrieve DNS servers list from the system
+emulator: WARNING: Cannot find system DNS servers! Name resolution will be disabled.
+emulator: Found 0 DNS servers:
+emulator: trying to load skin file '/Users/zareanmasoud/Programs/sdk/skins//pixel_xl_silver/layout'
+emulator: registered 'boot-properties' qemud service
+emulator: Adding boot property: 'qemu.cmdline' = 'androidboot.logcat=v:* androidboot.consolepipe=qemu_pipe,pipe:logcat'
+emulator: Adding boot property: 'qemu.logcat' = 'start'
+emulator: Requested console port 12400: Inferring adb port 12401.
+emulator: CPU Acceleration: working
+emulator: CPU Acceleration status: HAXM version 7.5.1 (4) is installed and usable.
+emulator: WARNING: Running on a sytem with less than 8 logical cores. Setting number of virtual cores to 1
+emulator: VERBOSE: AdbInterface.cpp:242: Found: 3 adb executables
+emulator: VERBOSE: AdbInterface.cpp:244: Adb: /Users/zareanmasoud/Programs/sdk/platform-tools/adb
+emulator: VERBOSE: AdbInterface.cpp:244: Adb: /Users/zareanmasoud/Programs/sdk/platform-tools/adb
+emulator: VERBOSE: AdbInterface.cpp:244: Adb: /usr/local/bin/adb
+emulator: VERBOSE: AdbInterface.cpp:263: Path:/Users/zareanmasoud/Programs/sdk/platform-tools/adb protocol version: 41
+emulator: VERBOSE: AdbInterface.cpp:263: Path:/Users/zareanmasoud/Programs/sdk/platform-tools/adb protocol version: 41
+emulator: VERBOSE: AdbInterface.cpp:263: Path:/usr/local/bin/adb protocol version: 40
+emulator: GPU emulation enabled using 'host' mode
+emulator: Initializing hardware OpenGLES emulation support
+emulator: VERBOSE: emulator-qt-window.cpp:2826: setUIMultiDisplay id 0 0 0 1440 2560 add
+Content of hardware configuration file:
+  hw.cpu.arch = x86
+  hw.cpu.model = qemu32
+  hw.cpu.ncore = 1
+  hw.ramSize = 2048
+  hw.screen = multi-touch
+  hw.mainKeys = false
+  hw.trackBall = false
+  hw.keyboard = true
+  hw.keyboard.lid = false
+  hw.keyboard.charmap = qwerty2
+  hw.dPad = false
+  hw.rotaryInput = false
+  hw.gsmModem = true
+  hw.gps = true
+  hw.battery = true
+  hw.accelerometer = true
+  hw.gyroscope = true
+  hw.audioInput = true
+  hw.audioOutput = true
+  hw.sdCard = true
+  hw.sdCard.path = /Users/zareanmasoud/.android/avd/Pixel_XL_API_29.avd/sdcard.img
+  disk.cachePartition = true
+  disk.cachePartition.path = /Users/zareanmasoud/.android/avd/Pixel_XL_API_29.avd/cache.img
+  disk.cachePartition.size = 66m
+  test.quitAfterBootTimeOut = -1
+  test.delayAdbTillBootComplete = 0
+  test.monitorAdb = 0
+  hw.lcd.width = 1440
+  hw.lcd.height = 2560
+  hw.lcd.depth = 16
+  hw.lcd.density = 560
+  hw.lcd.backlight = true
+  hw.lcd.vsync = 60
+  hw.gltransport = pipe
+  hw.gltransport.asg.writeBufferSize = 1048576
+  hw.gltransport.asg.writeStepSize = 4096
+  hw.gltransport.asg.dataRingSize = 32768
+  hw.gltransport.drawFlushInterval = 800
+  hw.displayRegion.0.1.xOffset = -1
+  hw.displayRegion.0.1.yOffset = -1
+  hw.displayRegion.0.1.width = 0
+  hw.displayRegion.0.1.height = 0
+  hw.fold.adjust = false
+  hw.display1.width = 0
+  hw.display1.height = 0
+  hw.display1.density = 0
+  hw.display1.xOffset = -1
+  hw.display1.yOffset = -1
+  hw.display1.flag = 0
+  hw.display2.width = 0
+  hw.display2.height = 0
+  hw.display2.density = 0
+  hw.display2.xOffset = -1
+  hw.display2.yOffset = -1
+  hw.display2.flag = 0
+  hw.display3.width = 0
+  hw.display3.height = 0
+  hw.display3.density = 0
+  hw.display3.xOffset = -1
+  hw.display3.yOffset = -1
+  hw.display3.flag = 0
+  hw.gpu.enabled = true
+  hw.gpu.mode = host
+  hw.initialOrientation = Portrait
+  hw.camera.back = virtualscene
+  hw.camera.front = emulated
+  vm.heapSize = 512
+  hw.sensors.light = true
+  hw.sensors.pressure = true
+  hw.sensors.humidity = true
+  hw.sensors.proximity = true
+  hw.sensors.magnetic_field = true
+  hw.sensors.magnetic_field_uncalibrated = true
+  hw.sensors.gyroscope_uncalibrated = true
+  hw.sensors.orientation = true
+  hw.sensors.temperature = true
+  hw.useext4 = true
+  hw.arc = false
+  hw.arc.autologin = false
+  kernel.path = /Users/zareanmasoud/Programs/sdk/system-images/android-29/google_apis/x86//kernel-ranchu-64
+  kernel.newDeviceNaming = yes
+  kernel.supportsYaffs2 = no
+  disk.ramdisk.path = /Users/zareanmasoud/Programs/sdk/system-images/android-29/google_apis/x86//ramdisk.img
+  disk.systemPartition.initPath = /Users/zareanmasoud/Programs/sdk/system-images/android-29/google_apis/x86//system.img
+  disk.systemPartition.size = 3083m
+  disk.vendorPartition.initPath = /Users/zareanmasoud/Programs/sdk/system-images/android-29/google_apis/x86//vendor.img
+  disk.vendorPartition.size = 800m
+  disk.dataPartition.path = /Users/zareanmasoud/.android/avd/Pixel_XL_API_29.avd/userdata-qemu.img
+  disk.dataPartition.size = 800m
+  disk.encryptionKeyPartition.path = /Users/zareanmasoud/.android/avd/Pixel_XL_API_29.avd/encryptionkey.img
+  PlayStore.enabled = false
+  avd.name = Pixel_XL_API_29
+  avd.id = Pixel_XL_API_29
+  fastboot.forceColdBoot = false
+  android.sdk.root = /Users/zareanmasoud/Programs/sdk
+  android.avd.home = /Users/zareanmasoud/.android/avd
+.
+QEMU options list:
+emulator: argv[00] = "/Users/zareanmasoud/Programs/sdk/emulator/qemu/darwin-x86_64/qemu-system-x86_64"
+emulator: argv[01] = "-read-only"
+emulator: argv[02] = "-no-audio"
+emulator: argv[03] = "-serial"
+emulator: argv[04] = "null"
+emulator: argv[05] = "-android-ports"
+emulator: argv[06] = "12400,12401"
+emulator: argv[07] = "-device"
+emulator: argv[08] = "goldfish_pstore,addr=0xff018000,size=0x10000,file=/Users/zareanmasoud/.android/avd/Pixel_XL_API_29.avd/data/misc/pstore/pstore.bin"
+emulator: argv[09] = "-cpu"
+emulator: argv[10] = "android64"
+emulator: argv[11] = "-enable-hvf"
+emulator: argv[12] = "-smp"
+emulator: argv[13] = "cores=2"
+emulator: argv[14] = "-m"
+emulator: argv[15] = "2048"
+emulator: argv[16] = "-lcd-density"
+emulator: argv[17] = "560"
+emulator: argv[18] = "-nodefaults"
+emulator: argv[19] = "-kernel"
+emulator: argv[20] = "/Users/zareanmasoud/Programs/sdk/system-images/android-29/google_apis/x86//kernel-ranchu-64"
+emulator: argv[21] = "-initrd"
+emulator: argv[22] = "/Users/zareanmasoud/Programs/sdk/system-images/android-29/google_apis/x86//ramdisk.img"
+emulator: argv[23] = "-drive"
+emulator: argv[24] = "if=none,index=0,id=system,file=/Users/zareanmasoud/Programs/sdk/system-images/android-29/google_apis/x86//system.img,read-only"
+emulator: argv[25] = "-device"
+emulator: argv[26] = "virtio-blk-pci,drive=system,modern-pio-notify"
+emulator: argv[27] = "-drive"
+emulator: argv[28] = "if=none,index=1,id=cache,file=/Users/zareanmasoud/.android/avd/Pixel_XL_API_29.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+emulator: argv[29] = "-device"
+emulator: argv[30] = "virtio-blk-pci,drive=cache,modern-pio-notify"
+emulator: argv[31] = "-drive"
+emulator: argv[32] = "if=none,index=2,id=userdata,file=/Users/zareanmasoud/.android/avd/Pixel_XL_API_29.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+emulator: argv[33] = "-device"
+emulator: argv[34] = "virtio-blk-pci,drive=userdata,modern-pio-notify"
+emulator: argv[35] = "-drive"
+emulator: argv[36] = "if=none,index=3,id=encrypt,file=/Users/zareanmasoud/.android/avd/Pixel_XL_API_29.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+emulator: argv[37] = "-device"
+emulator: argv[38] = "virtio-blk-pci,drive=encrypt,modern-pio-notify"
+emulator: argv[39] = "-drive"
+emulator: argv[40] = "if=none,index=4,id=vendor,file=/Users/zareanmasoud/Programs/sdk/system-images/android-29/google_apis/x86//vendor.img,read-only"
+emulator: argv[41] = "-device"
+emulator: argv[42] = "virtio-blk-pci,drive=vendor,modern-pio-notify"
+emulator: argv[43] = "-drive"
+emulator: argv[44] = "if=none,index=5,id=sdcard,file=/Users/zareanmasoud/.android/avd/Pixel_XL_API_29.avd/sdcard.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576"
+emulator: argv[45] = "-device"
+emulator: argv[46] = "virtio-blk-pci,drive=sdcard,modern-pio-notify"
+emulator: argv[47] = "-netdev"
+emulator: argv[48] = "user,id=mynet"
+emulator: argv[49] = "-device"
+emulator: argv[50] = "virtio-net-pci,netdev=mynet"
+emulator: argv[51] = "-device"
+emulator: argv[52] = "virtio-rng-pci"
+emulator: argv[53] = "-show-cursor"
+emulator: argv[54] = "-device"
+emulator: argv[55] = "virtio_input_multi_touch_pci_1"
+emulator: argv[56] = "-device"
+emulator: argv[57] = "virtio_input_multi_touch_pci_2"
+emulator: argv[58] = "-device"
+emulator: argv[59] = "virtio_input_multi_touch_pci_3"
+emulator: argv[60] = "-device"
+emulator: argv[61] = "virtio_input_multi_touch_pci_4"
+emulator: argv[62] = "-device"
+emulator: argv[63] = "virtio_input_multi_touch_pci_5"
+emulator: argv[64] = "-device"
+emulator: argv[65] = "virtio_input_multi_touch_pci_6"
+emulator: argv[66] = "-device"
+emulator: argv[67] = "virtio_input_multi_touch_pci_7"
+emulator: argv[68] = "-device"
+emulator: argv[69] = "virtio_input_multi_touch_pci_8"
+emulator: argv[70] = "-device"
+emulator: argv[71] = "virtio_input_multi_touch_pci_9"
+emulator: argv[72] = "-device"
+emulator: argv[73] = "virtio_input_multi_touch_pci_10"
+emulator: argv[74] = "-device"
+emulator: argv[75] = "virtio_input_multi_touch_pci_11"
+emulator: argv[76] = "-device"
+emulator: argv[77] = "virtio-keyboard-pci"
+emulator: argv[78] = "-L"
+emulator: argv[79] = "/Users/zareanmasoud/Programs/sdk/emulator/lib/pc-bios"
+emulator: argv[80] = "-soundhw"
+emulator: argv[81] = "hda"
+emulator: argv[82] = "-vga"
+emulator: argv[83] = "none"
+emulator: argv[84] = "-append"
+emulator: argv[85] = "qemu=1 no_timer_check androidboot.hardware=ranchu androidboot.serialno=EMULATOR29X2X11X0 clocksource=pit no-kvmclock android.qemud=1 console=0 android.checkjni=1 android.bootanim=0 qemu.gles=1 qemu.settings.system.screen_off_timeout=2147483647 qemu.encrypt=1 qemu.vsync=60 qemu.gltransport=pipe qemu.gltransport.drawFlushInterval=800 qemu.opengles.version=196608 qemu.uirenderer=skiagl cma=314M@0-4G qemu.wifi=1 mac80211_hwsim.channels=2 loop.max_part=7 androidboot.vbmeta.size=4352 androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.digest=bc84f7138eb2b5eeb318682e393649688bc3de8bf7151420a915a015e4bbfe4d androidboot.boot_devices=pci0000:00/0000:00:03.0 ramoops.mem_address=0xff018000 ramoops.mem_size=0x10000 memmap=0x10000$0xff018000 qemu.dalvik.vm.heapsize=512m"
+emulator: argv[86] = "-android-hw"
+emulator: argv[87] = "/tmp/android-zareanmasoud/emulator-FhGMEt"
+Concatenated QEMU options:
+ /Users/zareanmasoud/Programs/sdk/emulator/qemu/darwin-x86_64/qemu-system-x86_64 -read-only -no-audio -serial null -android-ports 12400,12401 -device goldfish_pstore,addr=0xff018000,size=0x10000,file=/Users/zareanmasoud/.android/avd/Pixel_XL_API_29.avd/data/misc/pstore/pstore.bin -cpu android64 -enable-hvf -smp cores=2 -m 2048 -lcd-density 560 -nodefaults -kernel /Users/zareanmasoud/Programs/sdk/system-images/android-29/google_apis/x86//kernel-ranchu-64 -initrd /Users/zareanmasoud/Programs/sdk/system-images/android-29/google_apis/x86//ramdisk.img -drive if=none,index=0,id=system,file=/Users/zareanmasoud/Programs/sdk/system-images/android-29/google_apis/x86//system.img,read-only -device virtio-blk-pci,drive=system,modern-pio-notify -drive if=none,index=1,id=cache,file=/Users/zareanmasoud/.android/avd/Pixel_XL_API_29.avd/cache.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=cache,modern-pio-notify -drive if=none,index=2,id=userdata,file=/Users/zareanmasoud/.android/avd/Pixel_XL_API_29.avd/userdata-qemu.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=userdata,modern-pio-notify -drive if=none,index=3,id=encrypt,file=/Users/zareanmasoud/.android/avd/Pixel_XL_API_29.avd/encryptionkey.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=encrypt,modern-pio-notify -drive if=none,index=4,id=vendor,file=/Users/zareanmasoud/Programs/sdk/system-images/android-29/google_apis/x86//vendor.img,read-only -device virtio-blk-pci,drive=vendor,modern-pio-notify -drive if=none,index=5,id=sdcard,file=/Users/zareanmasoud/.android/avd/Pixel_XL_API_29.avd/sdcard.img.qcow2,overlap-check=none,cache=unsafe,l2-cache-size=1048576 -device virtio-blk-pci,drive=sdcard,modern-pio-notify -netdev user,id=mynet -device virtio-net-pci,netdev=mynet -device virtio-rng-pci -show-cursor -device virtio_input_multi_touch_pci_1 -device virtio_input_multi_touch_pci_2 -device virtio_input_multi_touch_pci_3 -device virtio_input_multi_touch_pci_4 -device virtio_input_multi_touch_pci_5 -device virtio_input_multi_touch_pci_6 -device virtio_input_multi_touch_pci_7 -device virtio_input_multi_touch_pci_8 -device virtio_input_multi_touch_pci_9 -device virtio_input_multi_touch_pci_10 -device virtio_input_multi_touch_pci_11 -device virtio-keyboard-pci -L /Users/zareanmasoud/Programs/sdk/emulator/lib/pc-bios -soundhw hda -vga none -append 'qemu=1 no_timer_check androidboot.hardware=ranchu androidboot.serialno=EMULATOR29X2X11X0 clocksource=pit no-kvmclock android.qemud=1 console=0 android.checkjni=1 android.bootanim=0 qemu.gles=1 qemu.settings.system.screen_off_timeout=2147483647 qemu.encrypt=1 qemu.vsync=60 qemu.gltransport=pipe qemu.gltransport.drawFlushInterval=800 qemu.opengles.version=196608 qemu.uirenderer=skiagl cma=314M@0-4G qemu.wifi=1 mac80211_hwsim.channels=2 loop.max_part=7 androidboot.vbmeta.size=4352 androidboot.vbmeta.hash_alg=sha256 androidboot.vbmeta.digest=bc84f7138eb2b5eeb318682e393649688bc3de8bf7151420a915a015e4bbfe4d androidboot.boot_devices=pci0000:00/0000:00:03.0 ramoops.mem_address=0xff018000 ramoops.mem_size=0x10000 memmap=0x10000$0xff018000 qemu.dalvik.vm.heapsize=512m' -android-hw /tmp/android-zareanmasoud/emulator-FhGMEt
+emulator: Android qemu version 29.2.11.0 (build_id 6031357) (CL:N/A)
+
+emulator: Starting QEMU main loop
+emulator: Adding boot property: 'ro.opengles.version' = '196608'
+emulator: Adding boot property: 'qemu.sf.fake_camera' = 'front'
+emulator: Adding boot property: 'dalvik.vm.heapsize' = '512m'
+emulator: Adding boot property: 'qemu.hw.mainkeys' = '0'
+emulator: Adding boot property: 'qemu.sf.lcd_density' = '560'
+emulator: goldfish_events.have-dpad: false
+emulator: goldfish_events.have-trackball: false
+emulator: goldfish_events.have-camera: true
+emulator: goldfish_events.have-keyboard: false
+emulator: goldfish_events.have-lidswitch: false
+emulator: goldfish_events.have-tabletmode: false
+emulator: goldfish_events.have-touch: false
+emulator: goldfish_events.have-multitouch: false
+emulator: WARNING: Requested adb port (12401) is outside the recommended range [5555,5586]. ADB may not function properly for the emulator. See -help-port for details.
+Not using any http proxy
+emulator: Adding boot property: 'qemu.timezone' = 'Europe/London'
+emulator: android_hw_fingerprint_init: fingerprint qemud listen service initialized
+
+emulator: emulator_window_fb_rotate
+
+emulator: No acpi ini file provided, using default
+
+emulator: WARNING: UpdateCheck: Failure: Error
+emulator: WARNING: UpdateCheck: failed to get the latest version, skipping check (current version '29.2.11-6031357')
+emulator: No acpi ini file provided, using default
+
+emulator: VERBOSE: winsys-qt.cpp:919: config multidisplay with config.ini 0x0 0x0 0x0
+emulator: _hwFingerprint_connect: connect finger print listen is called
+
+emulator: got message from guest system fingerprint HAL
+
+emulator: onGuestSendCommand: [0x7f9a0a2f8200] Adb connected, start proxing data
+emulator: INFO: boot completed
+emulator: INFO: boot time 23671 ms
+emulator: Increasing screen off timeout, logcat buffer size to 2M.
+emulator: Revoking microphone permissions for Google App.
+emulator: VERBOSE: System.cpp:1449: Timed out with running command |/Users/zareanmasoud/Programs/sdk/platform-tools/adb -s emulator-12400 shell am broadcast -a com.android.emulator.multidisplay.START -n com.android.emulator.multidisplay/.MultiDisplayServiceReceiver |
+emulator: VERBOSE: System.cpp:1449: Timed out with running command |/Users/zareanmasoud/Programs/sdk/platform-tools/adb -s emulator-12400 shell am broadcast -a com.android.emulator.multidisplay.START -n com.android.emulator.multidisplay/.MultiDisplayServiceReceiver |
+emulator: VERBOSE: AndroidAsyncMessagePipe.cpp:26: Registering pipe service multidisplay
+emulator: VERBOSE: MultiDisplayPipe.cpp:32: MultiDisplayPipe created 0x7f9a093234f0
+emulator: VERBOSE: MultiDisplayPipe.cpp:48: MultiDisplayPipe recevied QUERY
+emulator: VERBOSE: System.cpp:1449: Timed out with running command |/Users/zareanmasoud/Programs/sdk/platform-tools/adb -s emulator-12400 shell am broadcast -a com.android.emulator.multidisplay.START -n com.android.emulator.multidisplay/.MultiDisplayServiceReceiver |
+emulator: onGuestRecvData: [0x7f9a0a2f8200] Adb closed by host
+emulator: WARNING: UpdateCheck: Failure: Error
+emulator: WARNING: Discarding the changed state (command-line flag).
+emulator: Done with QEMU main loop
+emulator: User-config was not changed.

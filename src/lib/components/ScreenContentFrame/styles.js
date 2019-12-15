@@ -12,6 +12,9 @@ const styles = StyleSheet.create({
   safeAreaView: {
     flex: 1,
   },
+  scrollView: {
+    flex: 1,
+  },
   contentContainer: {
     flexGrow: 1,
   },

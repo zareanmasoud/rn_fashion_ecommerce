@@ -10,7 +10,7 @@ import React, {useState} from 'react';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import NavigationContainer from 'screens/routes/container';
 // eslint-disable-next-line import/no-extraneous-dependencies
-import ScreenContentFrame from 'lib/components/ScreenContentFrame';
+// import ScreenContentFrame from 'lib/components/ScreenContentFrame';
 import {CartProvider} from './context/CartContext';
 
 export default function App() {
@@ -24,10 +24,10 @@ export default function App() {
     setCart(cart - 1);
   };
   return (
-    <ScreenContentFrame>
-      <CartProvider value={{cart, addToCart, removeFromCart}}>
-        <NavigationContainer />
-      </CartProvider>
-    </ScreenContentFrame>
+    // <ScreenContentFrame>
+    <CartProvider value={{cart, addToCart, removeFromCart}}>
+      <NavigationContainer />
+    </CartProvider>
+    // </ScreenContentFrame>
   );
 }

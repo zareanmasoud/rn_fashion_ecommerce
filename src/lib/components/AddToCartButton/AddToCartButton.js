@@ -8,7 +8,7 @@ type Props = {
 
 export default function AddToCartButton({specs}: Props) {
   return (
-    <TouchableOpacity onPress={() => specs.press()}>
+    <TouchableOpacity testID="add_to_cart_button" onPress={() => specs.press()}>
       <View style={styles.buttonView}>
         <Image source={specs.src} style={styles.buttonImg} />
       </View>

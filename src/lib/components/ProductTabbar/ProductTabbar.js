@@ -7,14 +7,6 @@ import AddToCartButton from 'lib/components/AddToCartButton';
 import styles from './styles';
 import type {Button} from './model';
 
-function renderButton(specs, index) {
-  return <TabbarButton specs={specs} key={index} />;
-}
-
-function renderAddToCart(specs) {
-  return <AddToCartButton specs={specs} />;
-}
-
 type Props = {
   specs: Button[],
 };
@@ -24,12 +16,10 @@ const ProductTabbar = ({specs}: Props) => {
   const addToCart = specsArray.pop();
   return (
     <View style={styles.container}>
-      {[
-        specsArray.map((buttonSpecs, index) =>
-          renderButton(buttonSpecs, index),
-        ),
-        renderAddToCart(addToCart),
-      ]}
+      {specsArray.map(buttonSpecs => (
+        <TabbarButton specs={buttonSpecs} key={buttonSpecs.id} />
+      ))}
+      <AddToCartButton specs={addToCart} />
     </View>
   );
 };

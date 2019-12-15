@@ -5,7 +5,7 @@ import type {ItemModel} from './Item/model';
 
 let Item;
 function renderItem(data, index) {
-  return <Item key={index} data={data} />;
+  return <Item data={data} index={index} />;
 }
 
 type Props = {
@@ -21,7 +21,7 @@ export default function MyFlatList({data, itemComponent}: Props) {
       contentContainerStyle={styles.contentContainer}
       data={data}
       keyExtractor={(item, index) => index.toString()}
-      scrollEnabled={false}
+      // scrollEnabled={false}
       renderItem={({item, index}) => renderItem(item, index)}
     />
   );

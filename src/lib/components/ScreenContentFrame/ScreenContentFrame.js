@@ -16,18 +16,19 @@ const ScreenContentFrame = ({
   statusBackgroundColor,
 }: Props) => {
   return (
-    <>
+    <SafeAreaView style={styles.safeAreaView}>
       <StatusBar
         barStyle={statusBarStyle}
         backgroundColor={statusBackgroundColor}
       />
       {/* <ImageBackground source={R.images.main_background} style={styles.imgBackground}/> // or view with backgroundColor */}
-      <SafeAreaView style={styles.safeAreaView}>
-        <ScrollView contentContainerStyle={styles.contentContainer}>
-          {children}
-        </ScrollView>
-      </SafeAreaView>
-    </>
+      <ScrollView
+        style={styles.scrollView}
+        // nestedScrollEnabled
+        contentContainerStyle={styles.contentContainer}>
+        {children}
+      </ScrollView>
+    </SafeAreaView>
   );
 };
 

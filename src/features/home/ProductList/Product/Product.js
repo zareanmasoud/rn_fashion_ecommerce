@@ -6,12 +6,19 @@ import {withNavigation} from 'react-navigation';
 import specs from './specs';
 
 type Props = {
-  index: number,
   data: ItemModel,
+  index: number,
 };
 
-const Product = ({index, data, navigation}: Props) => {
-  return <Item key={index} data={data} spec={specs.spec(navigation, data)} />;
+const Product = ({data, index, navigation}: Props) => {
+  return (
+    <Item
+      key={index}
+      data={data}
+      index={index}
+      spec={specs.spec(navigation, data)}
+    />
+  );
 };
 
 export default withNavigation(Product);
