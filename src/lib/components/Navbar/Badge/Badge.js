@@ -1,13 +1,18 @@
-import React, {useContext} from 'react';
+import React from 'react';
 import {View, Text} from 'react-native';
-import CartContext from '../../../../context/CartContext';
+// eslint-disable-next-line import/no-extraneous-dependencies
 import styles from './styles';
 
-export default function Badge() {
-  const {cart} = useContext(CartContext);
+type Props = {
+  resources: any,
+};
+
+export default function Badge({resources}: Props) {
+  const {cart, cartTextTestID} = resources;
+
   return (
     <View style={styles.container}>
-      <Text testID="cart_text">{cart}</Text>
+      <Text testID={cartTextTestID}>{cart}</Text>
     </View>
   );
 }

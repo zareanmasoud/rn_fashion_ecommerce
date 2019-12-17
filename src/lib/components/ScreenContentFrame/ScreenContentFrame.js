@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, ScrollView, StatusBar} from 'react-native';
+import {SafeAreaView, StatusBar} from 'react-native';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import R from 'res/R';
 import styles from './styles';
@@ -22,12 +22,12 @@ const ScreenContentFrame = ({
         backgroundColor={statusBackgroundColor}
       />
       {/* <ImageBackground source={R.images.main_background} style={styles.imgBackground}/> // or view with backgroundColor */}
-      <ScrollView
-        style={styles.scrollView}
-        // nestedScrollEnabled
-        contentContainerStyle={styles.contentContainer}>
-        {children}
-      </ScrollView>
+      {/* <ScrollView */}
+      {/*  style={styles.scrollView} */}
+      {/*  nestedScrollEnabled */}
+      {/*  contentContainerStyle={styles.contentContainer}> */}
+      {children}
+      {/* </ScrollView> */}
     </SafeAreaView>
   );
 };
@@ -36,5 +36,10 @@ ScreenContentFrame.defaultProps = {
   statusBarStyle: 'dark-content',
   statusBackgroundColor: R.colors.whiteBackground,
 };
+
+// YellowBox.ignoreWarnings([
+//   'VirtualizedLists should never be nested', // TODO: Remove VirtualizedLists ignoreWarning when fixed
+//   'RCTBridge required dispatch_sync to load RCTDevLoadingView', // TODO: Remove RCTBridge ignoreWarning when fixed
+// ]);
 
 export default ScreenContentFrame;

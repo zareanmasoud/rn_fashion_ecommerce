@@ -10,7 +10,7 @@ describe('Example', () => {
   it('should increase add to cart count', async () => {
     await element(by.id('0')).tap();
     await element(by.id('add_to_cart_button')).tap();
-    await expect(element(by.id('cart_text'))).toHaveText('1');
+    await expect(element(by.id('product_cart_text'))).toHaveText('1');
   });
   //
   // it('should show hello screen after tap', async () => {

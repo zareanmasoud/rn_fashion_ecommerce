@@ -4,5 +4,5 @@ import MainNavbar from 'features/layout/MainNavbar';
 // import styles from './styles';
 
 export default function ProductHeader() {
-  return <MainNavbar />;
+  return <MainNavbar cartTextTestID="product_cart_text" />;
 }

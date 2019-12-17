@@ -8,9 +8,15 @@ const specs = {
       src: R.images.backButton,
     };
   },
-  buttonTwoSpec: {
-    press: () => {},
-    src: R.images.cartButton,
+  buttonTwoSpec(cart, cartTextTestID) {
+    return {
+      press: () => {},
+      src: R.images.cartButton,
+      badge: {
+        cart,
+        cartTextTestID,
+      },
+    };
   },
   logoButtonSpec: {
     press: () => {},

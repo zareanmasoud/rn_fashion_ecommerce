@@ -7,10 +7,11 @@ type Props = {
 };
 
 export default function CartButton({spec}: Props) {
+  const {badge} = spec;
   return (
     <>
       <NavbarButton spec={spec} />
-      <Badge />
+      <Badge resources={badge} />
     </>
   );
 }
