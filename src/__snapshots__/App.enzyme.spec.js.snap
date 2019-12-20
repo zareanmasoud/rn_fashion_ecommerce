@@ -1,22 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App tested with airbnb enzyme App mount with enzyme 1`] = `
-<ScreenContentFrame
-  statusBackgroundColor="#ffffff"
-  statusBarStyle="dark-content"
->
-  <ContextProvider
-    value={
-      Object {
-        "addToCart": [Function],
-        "cart": 0,
-        "removeFromCart": [Function],
-      }
+<ContextProvider
+  value={
+    Object {
+      "addToCart": [Function],
+      "cart": 0,
+      "removeFromCart": [Function],
     }
-  >
-    <NavigationContainer
-      theme="light"
-    />
-  </ContextProvider>
-</ScreenContentFrame>
+  }
+>
+  <NavigationContainer
+    theme="light"
+  />
+</ContextProvider>
 `;
