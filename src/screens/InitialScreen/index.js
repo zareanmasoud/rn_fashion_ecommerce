@@ -1,3 +1,1 @@
-import InitialScreen from './InitialScreen';
-
-export {InitialScreen as default};
+export {default} from './InitialScreen';

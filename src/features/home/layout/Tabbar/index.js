@@ -1,3 +1,1 @@
-import HomeTabbar from './HomeTabbar';
-
-export {HomeTabbar as default};
+export {default} from './HomeTabbar';

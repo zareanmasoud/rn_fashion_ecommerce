@@ -1,3 +1,1 @@
-import ScreenContentFrame from './ScreenContentFrame';
-
-export {ScreenContentFrame as default};
+export {default} from './ScreenContentFrame';

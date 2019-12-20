@@ -1,3 +1,1 @@
-import NavbarButton from './NavbarButton';
-
-export {NavbarButton as default};
+export {default} from './NavbarButton';

@@ -1,3 +1,1 @@
-import MainNavbar from './MainNavbar';
-
-export {MainNavbar as default};
+export {default} from './MainNavbar';

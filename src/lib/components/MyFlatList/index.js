@@ -1,3 +1,1 @@
-import MyFlatList from './MyFlatList';
-
-export {MyFlatList as default};
+export {default} from './MyFlatList';

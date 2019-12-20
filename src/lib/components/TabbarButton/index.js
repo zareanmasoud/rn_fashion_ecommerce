@@ -1,3 +1,1 @@
-import TabbarButton from './TabbarButton';
-
-export {TabbarButton as default};
+export {default} from './TabbarButton';
