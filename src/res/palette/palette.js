@@ -1,10 +1,10 @@
 import colors from '../colors';
-import {shadow} from './shadow';
+import setShadow from './shadow';
 
 const palette = {
   shadow(type) {
     return {
-      ...shadow(type),
+      ...setShadow(type),
     };
   },
   heading: {

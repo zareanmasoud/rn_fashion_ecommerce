@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import {PRODUCT_SCREEN} from 'screens/routes/constants';
 
 const specs = {

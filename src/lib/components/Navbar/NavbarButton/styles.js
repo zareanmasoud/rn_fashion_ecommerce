@@ -1,5 +1,4 @@
 import {StyleSheet} from 'react-native';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import R from 'res/R';
 import {scale} from '../../../utils/scaling';
 

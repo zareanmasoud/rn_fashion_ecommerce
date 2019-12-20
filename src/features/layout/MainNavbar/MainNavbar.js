@@ -1,7 +1,5 @@
 import React from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import Navbar from 'lib/components/Navbar';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import {withNavigation} from 'react-navigation';
 import specs from './specs';
 import {useCartContext} from '../../../context/CartContext';
@@ -13,11 +11,11 @@ type Props = {
 
 // The concrete Navbar
 const MainNavbar = ({navigation, noBackButton, cartTextTestID}: Props) => {
+  const {cart} = useCartContext();
+
   const backButton = {
     backButton: specs.backButtonSpec(navigation),
   };
-
-  const {cart} = useCartContext();
 
   return (
     <Navbar

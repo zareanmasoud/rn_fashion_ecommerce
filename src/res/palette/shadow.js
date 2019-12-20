@@ -1,5 +1,4 @@
-// eslint-disable-next-line import/prefer-default-export
-export const shadow = type => {
+export default function setShadow(type) {
   let obj = {};
   switch (type) {
     case 'narrow':
@@ -37,4 +36,4 @@ export const shadow = type => {
     // android
     elevation,
   };
-};
+}

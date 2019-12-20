@@ -1,5 +1,4 @@
 import React from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import MyFlatList from 'lib/components/MyFlatList';
 import Product from './Product';
 import data from './data';

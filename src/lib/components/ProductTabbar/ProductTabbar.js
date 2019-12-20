@@ -1,8 +1,6 @@
 import React from 'react';
 import {View} from 'react-native';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import TabbarButton from 'lib/components/TabbarButton';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import AddToCartButton from 'lib/components/AddToCartButton';
 import styles from './styles';
 import type {Button} from './model';

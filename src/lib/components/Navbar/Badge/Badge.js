@@ -1,6 +1,5 @@
 import React from 'react';
 import {View, Text} from 'react-native';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import styles from './styles';
 
 type Props = {

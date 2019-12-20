@@ -1,3 +1,1 @@
-import palette from './palette';
-
-export {palette as default};
+export {default} from './palette';

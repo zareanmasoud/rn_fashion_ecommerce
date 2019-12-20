@@ -7,9 +7,7 @@
  */
 
 import React, {useState} from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import NavigationContainer from 'screens/routes/container';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import {CartProvider} from './context/CartContext';
 
 export default function App() {

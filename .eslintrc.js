@@ -8,7 +8,17 @@ module.exports = {
   },
   rules: {
     'prettier/prettier': 'error',
-    'import/no-extraneous-dependencies': ['error', {packageDir: './'}],
+    'import/no-extraneous-dependencies': [
+      'off',
+      {
+        packageDir: [
+          './src/features',
+          './src/lib',
+          './src/res',
+          './src/screens',
+        ],
+      },
+    ],
     'react/jsx-filename-extension': [
       1,
       {

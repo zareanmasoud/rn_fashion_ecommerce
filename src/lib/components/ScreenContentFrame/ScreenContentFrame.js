@@ -1,6 +1,5 @@
 import React from 'react';
 import {SafeAreaView, StatusBar} from 'react-native';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import R from 'res/R';
 import styles from './styles';
 
