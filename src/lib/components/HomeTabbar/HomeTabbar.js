@@ -4,22 +4,16 @@ import TabbarButton from 'lib/components/TabbarButton';
 import styles from './styles';
 import type {Button} from './model';
 
-function renderButton(specs, index) {
-  return <TabbarButton specs={specs} key={index} />;
-}
-
 type Props = {
   specs: Button[],
 };
 
 const HomeTabbar = ({specs}: Props) => {
-  return (
-    <View style={styles.container}>
-      {Object.values(specs).map((buttonSpecs, index) =>
-        renderButton(buttonSpecs, index),
-      )}
-    </View>
-  );
+  const Buttons = Object.values(specs).map(buttonSpecs => (
+    <TabbarButton specs={buttonSpecs} key={buttonSpecs.id} />
+  ));
+
+  return <View style={styles.container}>{Buttons}</View>;
 };
 
 export default HomeTabbar;

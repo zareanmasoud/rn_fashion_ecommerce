@@ -12,11 +12,13 @@ type Props = {
 const ProductTabbar = ({specs}: Props) => {
   const specsArray = Object.values(specs);
   const addToCart = specsArray.pop();
+  const Buttons = specsArray.map(buttonSpecs => (
+    <TabbarButton specs={buttonSpecs} key={buttonSpecs.id} />
+  ));
+
   return (
     <View style={styles.container}>
-      {specsArray.map(buttonSpecs => (
-        <TabbarButton specs={buttonSpecs} key={buttonSpecs.id} />
-      ))}
+      {Buttons}
       <AddToCartButton specs={addToCart} />
     </View>
   );

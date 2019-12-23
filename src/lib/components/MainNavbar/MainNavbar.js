@@ -11,8 +11,7 @@ type Props = {
   buttonTwo: Button,
 };
 
-// The abstract Navbar
-const Navbar = ({backButton, buttonTwo, logoButton}: Props) => {
+const MainNavbar = ({backButton, buttonTwo, logoButton}: Props) => {
   return (
     <View style={styles.container}>
       <ButtonOne backButton={backButton} logoButton={logoButton} />
@@ -21,4 +20,4 @@ const Navbar = ({backButton, buttonTwo, logoButton}: Props) => {
   );
 };
 
-export default Navbar;
+export default MainNavbar;

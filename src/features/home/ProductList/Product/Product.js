@@ -1,5 +1,4 @@
 import React from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import Item from 'lib/components/MyFlatList/Item';
 import type {ItemModel} from 'lib/components/MyFlatList/Item/model';
 import {withNavigation} from 'react-navigation';

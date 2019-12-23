@@ -2,7 +2,7 @@ import React from 'react';
 import {Text} from 'react-native';
 import HomeHeader from 'features/home/layout/Header';
 import ProductList from 'features/home/ProductList';
-import Tabbar from 'features/home/layout/Tabbar';
+import HomeTabbar from 'features/home/layout/Tabbar';
 import ScreenContentFrame from 'lib/components/ScreenContentFrame';
 // import styles from './styles';
 
@@ -19,7 +19,7 @@ export default function HomeScreen() {
       {/* <View style={{width: '100%', height: 200, backgroundColor: 'black'}} /> */}
       <Text testID="View" />
       <ProductList />
-      <Tabbar />
+      <HomeTabbar />
     </ScreenContentFrame>
   );
 }

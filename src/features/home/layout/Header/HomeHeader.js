@@ -6,7 +6,7 @@ export default function HomeHeader() {
   return (
     <>
       <MainNavbar noBackButton />
-      {/* <SelectMenuByGender /> */}
+      {/* <SelectByGenderTabbar /> */}
     </>
   );
 }

@@ -1,16 +1,16 @@
 import React from 'react';
 import {View} from 'react-native';
-import Tabbar from 'features/product/layout/Tabbar';
-import Header from 'features/product/layout/Header';
+import ProductTabbar from 'features/product/layout/Tabbar';
+import ProductHeader from 'features/product/layout/Header';
 import ScreenContentFrame from 'lib/components/ScreenContentFrame';
 // import styles from './styles';
 
 export default function ProductScreen() {
   return (
     <ScreenContentFrame>
-      <Header />
+      <ProductHeader />
       <View flex={1} />
-      <Tabbar />
+      <ProductTabbar />
     </ScreenContentFrame>
   );
 }

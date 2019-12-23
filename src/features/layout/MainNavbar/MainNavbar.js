@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from 'lib/components/Navbar';
+import MainNavbarComponent from 'lib/components/MainNavbar';
 import {withNavigation} from 'react-navigation';
 import specs from './specs';
 import {useCartContext} from '../../../context/CartContext';
@@ -9,7 +9,6 @@ type Props = {
   cartTextTestID?: string,
 };
 
-// The concrete Navbar
 const MainNavbar = ({navigation, noBackButton, cartTextTestID}: Props) => {
   const {cart} = useCartContext();
 
@@ -18,7 +17,7 @@ const MainNavbar = ({navigation, noBackButton, cartTextTestID}: Props) => {
   };
 
   return (
-    <Navbar
+    <MainNavbarComponent
       {...(!noBackButton && backButton)}
       buttonTwo={specs.buttonTwoSpec(cart, cartTextTestID)}
       logoButton={specs.logoButtonSpec}
