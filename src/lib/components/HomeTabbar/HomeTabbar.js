@@ -2,18 +2,18 @@ import React from 'react';
 import {View} from 'react-native';
 import TabbarButton from 'lib/components/TabbarButton';
 import styles from './styles';
-import type {Button} from './model';
+import type {Buttons} from './model';
 
 type Props = {
-  specs: Button[],
+  buttons: Buttons[],
 };
 
-const HomeTabbar = ({specs}: Props) => {
-  const Buttons = Object.values(specs).map(buttonSpecs => (
-    <TabbarButton specs={buttonSpecs} key={buttonSpecs.id} />
+const HomeTabbar = ({buttons}: Props) => {
+  const TabbarButtons = Object.values(buttons).map(button => (
+    <TabbarButton {...button} key={button.id} />
   ));
 
-  return <View style={styles.container}>{Buttons}</View>;
+  return <View style={styles.container}>{TabbarButtons}</View>;
 };
 
 export default HomeTabbar;

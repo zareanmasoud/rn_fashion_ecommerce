@@ -1,13 +1,13 @@
 import R from 'res/R';
 
 const specs = {
-  backButtonSpec(navigation) {
+  backButton(navigation) {
     return {
       press: () => navigation.pop(),
       src: R.images.backButton,
     };
   },
-  buttonTwoSpec(cart, cartTextTestID) {
+  buttonTwo(cart, cartTextTestID) {
     return {
       press: () => {},
       src: R.images.cartButton,
@@ -17,7 +17,7 @@ const specs = {
       },
     };
   },
-  logoButtonSpec: {
+  logoButton: {
     press: () => {},
     src: R.images.logoButton,
   },

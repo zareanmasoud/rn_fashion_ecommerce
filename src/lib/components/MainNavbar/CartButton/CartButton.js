@@ -1,17 +1,18 @@
 import React from 'react';
 import NavbarButton from '../NavbarButton/NavbarButton';
 import Badge from '../Badge';
+import type {ButtonTwo} from '../model';
 
 type Props = {
-  spec: any,
+  buttonTwo: ButtonTwo,
 };
 
-export default function CartButton({spec}: Props) {
-  const {badge} = spec;
+export default function CartButton({buttonTwo}: Props) {
+  const {badge} = buttonTwo;
   return (
     <>
-      <NavbarButton spec={spec} />
-      <Badge resources={badge} />
+      <NavbarButton press={buttonTwo.press} src={buttonTwo.src} />
+      <Badge {...badge} />
     </>
   );
 }

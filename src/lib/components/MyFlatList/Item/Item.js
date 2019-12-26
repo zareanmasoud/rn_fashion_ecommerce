@@ -1,17 +1,17 @@
 import React from 'react';
 import {Image, TouchableOpacity, View} from 'react-native';
-import type {ItemModel} from './model';
+import type {Data} from './model';
 import styles from './styles';
 
 type Props = {
-  data: ItemModel,
+  data: Data,
   index: number,
-  spec: any,
+  specs: any,
 };
 
-const Item = ({data, index, spec}: Props) => {
+const Item = ({data, index, specs}: Props) => {
   return (
-    <TouchableOpacity testID={`${index}`} onPress={() => spec.press()}>
+    <TouchableOpacity testID={`${index}`} onPress={() => specs.press()}>
       <View style={styles.itemView}>
         <Image source={data.photo} style={styles.itemImg} />
       </View>

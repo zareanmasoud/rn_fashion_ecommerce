@@ -13,14 +13,14 @@ const MainNavbar = ({navigation, noBackButton, cartTextTestID}: Props) => {
   const {cart} = useCartContext();
 
   const backButton = {
-    backButton: specs.backButtonSpec(navigation),
+    backButton: specs.backButton(navigation),
   };
 
   return (
     <MainNavbarComponent
       {...(!noBackButton && backButton)}
-      buttonTwo={specs.buttonTwoSpec(cart, cartTextTestID)}
-      logoButton={specs.logoButtonSpec}
+      buttonTwo={specs.buttonTwo(cart, cartTextTestID)}
+      logoButton={specs.logoButton}
     />
   );
 };

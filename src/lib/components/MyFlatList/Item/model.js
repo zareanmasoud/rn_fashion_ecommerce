@@ -1,6 +1,6 @@
 // @flow
 
-export type ItemModel = {
+export type Data = {
   id: string,
   photo: string,
 };

@@ -1,6 +1,12 @@
 // @flow
 
 export type Button = {
-  action: Function,
+  press: Function,
   src: string,
+};
+
+export type ButtonTwo = {
+  press: Function,
+  src: string,
+  badge: any,
 };

@@ -1,10 +1,10 @@
 import React from 'react';
 import {FlatList} from 'react-native';
 import styles from './styles';
-import type {ItemModel} from './Item/model';
+import type {Data} from './Item/model';
 
 type Props = {
-  data: ItemModel[],
+  data: Data[],
   itemComponent: React.Node,
 };
 

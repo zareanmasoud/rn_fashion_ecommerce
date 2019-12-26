@@ -3,14 +3,16 @@ import {Image, TouchableOpacity, View} from 'react-native';
 import styles from './styles';
 
 type Props = {
-  specs: any,
+  press: any,
+  src: any,
+  // text: any,
 };
 
-export default function TabbarButton({specs}: Props) {
+export default function TabbarButton({press, src}: Props) {
   return (
-    <TouchableOpacity onPress={() => specs.press()}>
+    <TouchableOpacity onPress={() => press()}>
       <View style={styles.buttonView}>
-        <Image source={specs.src} style={styles.buttonImg} />
+        <Image source={src} style={styles.buttonImg} />
       </View>
     </TouchableOpacity>
   );

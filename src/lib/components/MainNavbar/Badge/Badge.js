@@ -3,12 +3,11 @@ import {View, Text} from 'react-native';
 import styles from './styles';
 
 type Props = {
-  resources: any,
+  cart: any,
+  cartTextTestID: string,
 };
 
-export default function Badge({resources}: Props) {
-  const {cart, cartTextTestID} = resources;
-
+export default function Badge({cart, cartTextTestID}: Props) {
   return (
     <View style={styles.container}>
       <Text testID={cartTextTestID}>{cart}</Text>

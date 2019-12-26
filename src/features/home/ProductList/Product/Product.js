@@ -1,11 +1,11 @@
 import React from 'react';
 import Item from 'lib/components/MyFlatList/Item';
-import type {ItemModel} from 'lib/components/MyFlatList/Item/model';
+import type {Data} from 'lib/components/MyFlatList/Item/model';
 import {withNavigation} from 'react-navigation';
 import specs from './specs';
 
 type Props = {
-  data: ItemModel,
+  data: Data,
   index: number,
 };
 
@@ -15,7 +15,7 @@ const Product = ({data, index, navigation}: Props) => {
       key={index}
       data={data}
       index={index}
-      spec={specs.spec(navigation, data)}
+      specs={specs.product(navigation, data)}
     />
   );
 };

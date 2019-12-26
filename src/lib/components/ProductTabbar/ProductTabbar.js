@@ -3,22 +3,22 @@ import {View} from 'react-native';
 import TabbarButton from 'lib/components/TabbarButton';
 import AddToCartButton from 'lib/components/AddToCartButton';
 import styles from './styles';
-import type {Button} from './model';
+import type {Specs} from './model';
 
 type Props = {
-  specs: Button[],
+  specs: Specs[],
 };
 
 const ProductTabbar = ({specs}: Props) => {
   const specsArray = Object.values(specs);
   const addToCart = specsArray.pop();
-  const Buttons = specsArray.map(buttonSpecs => (
-    <TabbarButton specs={buttonSpecs} key={buttonSpecs.id} />
+  const TabbarButtons = specsArray.map(specsItem => (
+    <TabbarButton {...specsItem} key={specsItem.id} />
   ));
 
   return (
     <View style={styles.container}>
-      {Buttons}
+      {TabbarButtons}
       <AddToCartButton specs={addToCart} />
     </View>
   );

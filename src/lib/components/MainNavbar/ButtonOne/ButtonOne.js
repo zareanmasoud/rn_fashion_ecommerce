@@ -11,8 +11,8 @@ type Props = {
 
 export default function ButtonOne({backButton, logoButton}: Props) {
   if (backButton === undefined) {
-    if (logoButton) return <NavbarButton spec={logoButton} />;
+    if (logoButton) return <NavbarButton {...logoButton} />;
     return <View style={styles.emptyView} />;
   }
-  return <NavbarButton spec={backButton} />;
+  return <NavbarButton {...backButton} />;
 }
