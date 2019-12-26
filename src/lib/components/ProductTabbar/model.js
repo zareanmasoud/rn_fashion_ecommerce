@@ -1,7 +1,7 @@
 // @flow
 
-export type Specs = {
-  action: Function,
+export type Button = {
+  press: Function,
   src: string,
   text: string,
 };

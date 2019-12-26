@@ -11,12 +11,7 @@ type Props = {
 
 const Product = ({data, index, navigation}: Props) => {
   return (
-    <Item
-      key={index}
-      data={data}
-      index={index}
-      specs={specs.product(navigation, data)}
-    />
+    <Item key={index} index={index} {...specs.product(navigation, data)} />
   );
 };
 

@@ -7,9 +7,12 @@ import CartContext from '../../../../context/CartContext';
 const ProductTabbar = () => {
   const {addToCart} = useContext(CartContext);
 
-  const enhancedSpecs = {...specs, ...{addToCart: specs.addToCart(addToCart)}};
-
-  return <ProductTabbarComponent specs={enhancedSpecs} />;
+  return (
+    <ProductTabbarComponent
+      buttons={[specs.buttons.addWishlist, specs.buttons.fitting]}
+      addToCart={specs.buttons.addToCart(addToCart)}
+    />
+  );
 };
 
 export default withNavigation(ProductTabbar);
