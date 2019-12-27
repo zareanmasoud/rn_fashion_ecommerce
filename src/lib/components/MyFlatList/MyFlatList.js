@@ -1,7 +1,7 @@
 import React from 'react';
 import {FlatList} from 'react-native';
 import styles from './styles';
-import type {Data} from './Item/model';
+import type {Data} from './Item/types';
 
 type Props = {
   data: Data[],

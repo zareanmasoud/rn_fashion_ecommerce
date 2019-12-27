@@ -2,7 +2,7 @@ import React from 'react';
 import {View} from 'react-native';
 import NavbarButton from '../NavbarButton';
 import styles from '../styles';
-import type {Button} from '../model';
+import type {Button} from '../types';
 
 type Props = {
   backButton: Button,

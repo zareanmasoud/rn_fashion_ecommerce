@@ -1,7 +1,7 @@
 import React from 'react';
 import {View} from 'react-native';
 import styles from './styles';
-import type {Button, ButtonTwo} from './model';
+import type {Button, ButtonTwo} from './types';
 import ButtonOne from './ButtonOne';
 import CartButton from './CartButton';
 

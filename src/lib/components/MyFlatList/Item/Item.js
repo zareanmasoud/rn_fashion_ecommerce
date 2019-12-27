@@ -1,6 +1,6 @@
 import React from 'react';
 import {Image, TouchableOpacity, View} from 'react-native';
-import type {Photo} from './model';
+import type {Photo} from './types';
 import styles from './styles';
 
 type Props = {

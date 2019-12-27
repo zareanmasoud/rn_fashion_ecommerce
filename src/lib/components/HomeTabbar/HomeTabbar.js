@@ -2,7 +2,7 @@ import React from 'react';
 import {View} from 'react-native';
 import TabbarButton from 'lib/components/TabbarButton';
 import styles from './styles';
-import type {Buttons} from './model';
+import type {Buttons} from './types';
 
 type Props = {
   buttons: Buttons[],

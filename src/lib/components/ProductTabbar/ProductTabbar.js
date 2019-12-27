@@ -3,7 +3,7 @@ import {View} from 'react-native';
 import TabbarButton from 'lib/components/TabbarButton';
 import AddToCartButton from 'lib/components/AddToCartButton';
 import styles from './styles';
-import type {Button} from './model';
+import type {Button} from './types';
 
 type Props = {
   buttons: Button[],

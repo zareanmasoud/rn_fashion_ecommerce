@@ -1,6 +1,6 @@
 import R from 'res/R';
 
-const specs = {
+const model = {
   buttons: {
     addWishlist: {
       id: 1,
@@ -25,4 +25,4 @@ const specs = {
   },
 };
 
-export default specs;
+export default model;

@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import {withNavigation} from 'react-navigation';
 import ProductTabbarComponent from 'lib/components/ProductTabbar';
-import specs from './specs';
+import model from './model';
 import CartContext from '../../../../context/CartContext';
 
 const ProductTabbar = () => {
@@ -9,8 +9,8 @@ const ProductTabbar = () => {
 
   return (
     <ProductTabbarComponent
-      buttons={[specs.buttons.addWishlist, specs.buttons.fitting]}
-      addToCart={specs.buttons.addToCart(addToCart)}
+      buttons={[model.buttons.addWishlist, model.buttons.fitting]}
+      addToCart={model.buttons.addToCart(addToCart)}
     />
   );
 };

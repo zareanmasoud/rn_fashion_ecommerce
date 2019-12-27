@@ -1,7 +1,7 @@
 import React from 'react';
 import NavbarButton from '../NavbarButton/NavbarButton';
 import Badge from '../Badge';
-import type {ButtonTwo} from '../model';
+import type {ButtonTwo} from '../types';
 
 type Props = {
   buttonTwo: ButtonTwo,

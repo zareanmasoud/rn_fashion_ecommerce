@@ -1,10 +1,10 @@
 import React from 'react';
 import {withNavigation} from 'react-navigation';
 import HomeTabbarComponent from 'lib/components/HomeTabbar';
-import specs from './specs';
+import model from './model';
 
 const HomeTabbar = () => {
-  return <HomeTabbarComponent buttons={specs.buttons} />;
+  return <HomeTabbarComponent buttons={model.buttons} />;
 };
 
 export default withNavigation(HomeTabbar);

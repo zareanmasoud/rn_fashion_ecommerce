@@ -1,6 +1,6 @@
 import R from 'res/R';
 
-const specs = {
+const model = {
   backButton(navigation) {
     return {
       press: () => navigation.pop(),
@@ -23,4 +23,4 @@ const specs = {
   },
 };
 
-export default specs;
+export default model;
