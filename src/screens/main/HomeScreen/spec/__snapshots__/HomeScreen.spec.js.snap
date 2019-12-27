@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeScreen Rendering should match to snapshot 1`] = `
+<ScreenContentFrame
+  statusBackgroundColor="#ffffff"
+  statusBarStyle="dark-content"
+>
+  <HomeHeader />
+  <Text
+    testID="View"
+  />
+  <ProductList />
+  <withNavigation(HomeTabbar) />
+</ScreenContentFrame>
+`;

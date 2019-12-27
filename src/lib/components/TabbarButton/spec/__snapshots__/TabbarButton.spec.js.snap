@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TabbarButton Rendering should match to snapshot 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+  testID="tabbar_button"
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "height": "100%",
+        "justifyContent": "center",
+        "paddingHorizontal": 20,
+        "paddingVertical": 5,
+      }
+    }
+  >
+    <Image
+      source={
+        Object {
+          "process": [Function],
+        }
+      }
+      style={
+        Object {
+          "height": 42.857142857142854,
+          "tintColor": "#4d4d4dff",
+          "width": 42.857142857142854,
+        }
+      }
+    />
+  </View>
+</TouchableOpacity>
+`;

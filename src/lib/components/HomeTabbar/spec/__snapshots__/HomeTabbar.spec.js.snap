@@ -1,0 +1,67 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeTabbar Component Rendering should match to snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#ffffff",
+      "elevation": 1,
+      "flexDirection": "row",
+      "height": 107.14285714285714,
+      "justifyContent": "space-between",
+      "shadowColor": "black",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 0.1,
+      "shadowRadius": 0,
+    }
+  }
+>
+  <TabbarButton
+    id={0}
+    key="0"
+    press={[Function]}
+    src={
+      Object {
+        "process": [Function],
+      }
+    }
+    text="Home"
+  />
+  <TabbarButton
+    id={1}
+    key="1"
+    press={[Function]}
+    src={
+      Object {
+        "process": [Function],
+      }
+    }
+    text="Wishlist"
+  />
+  <TabbarButton
+    id={2}
+    key="2"
+    press={[Function]}
+    src={
+      Object {
+        "process": [Function],
+      }
+    }
+    text="Help"
+  />
+  <TabbarButton
+    id={3}
+    key="3"
+    press={[Function]}
+    src={
+      Object {
+        "process": [Function],
+      }
+    }
+    text="Profile"
+  />
+</View>
+`;

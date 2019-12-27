@@ -1,7 +1,7 @@
 // @flow
 
 export type Buttons = {
-  press: Function,
+  handlePress: Function,
   src: string,
   text: string,
 };
