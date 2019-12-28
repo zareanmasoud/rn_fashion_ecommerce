@@ -1,11 +1,11 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import HomeTabbar from '../HomeTabbar';
+import HomeHeader from '../HomeHeader';
 
-describe('HomeTabbar Feature', () => {
+describe('HomeHeader Feature', () => {
   describe('Rendering', () => {
     it('should match to snapshot', () => {
-      const wrapper = shallow(<HomeTabbar />);
+      const wrapper = shallow(<HomeHeader />);
       expect(wrapper).toMatchSnapshot();
     });
   });

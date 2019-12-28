@@ -1,11 +1,12 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import HomeTabbar from '../HomeTabbar';
+import Product from '../Product';
+import model from './model';
 
-describe('HomeTabbar Feature', () => {
+describe('Product Feature', () => {
   describe('Rendering', () => {
     it('should match to snapshot', () => {
-      const wrapper = shallow(<HomeTabbar />);
+      const wrapper = shallow(<Product data={model.product} index={0} />);
       expect(wrapper).toMatchSnapshot();
     });
   });

@@ -1,12 +1,6 @@
 import R from 'res/R';
 
 const model = {
-  backButton(navigation) {
-    return {
-      handlePress: () => navigation.pop(),
-      src: R.images.backButton,
-    };
-  },
   buttonTwo(cart, cartTextTestID) {
     return {
       handlePress: () => {},
@@ -16,10 +10,6 @@ const model = {
         cartTextTestID,
       },
     };
-  },
-  logoButton: {
-    handlePress: () => {},
-    src: R.images.logoButton,
   },
 };
 

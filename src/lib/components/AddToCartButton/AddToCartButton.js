@@ -3,14 +3,14 @@ import {Image, TouchableOpacity, View} from 'react-native';
 import styles from './styles';
 
 type Props = {
-  press: Function,
+  handlePress: Function,
   src: string,
   // text: string,
 };
 
-export default function AddToCartButton({press, src}: Props) {
+export default function AddToCartButton({handlePress, src}: Props) {
   return (
-    <TouchableOpacity testID="add_to_cart_button" onPress={() => press()}>
+    <TouchableOpacity testID="add_to_cart_button" onPress={() => handlePress()}>
       <View style={styles.buttonView}>
         <Image source={src} style={styles.buttonImg} />
       </View>

@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartButton Component Rendering should match to snapshot 1`] = `
+<Fragment>
+  <NavbarButton
+    handlePress={[Function]}
+    src={
+      Object {
+        "process": [Function],
+      }
+    }
+  />
+  <Badge
+    cart={0}
+    cartTextTestID="cart_text"
+  />
+</Fragment>
+`;

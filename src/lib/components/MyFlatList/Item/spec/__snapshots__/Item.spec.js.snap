@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Item Component Rendering should match to snapshot 1`] = `
+<TouchableOpacity
+  activeOpacity={0.2}
+  onPress={[Function]}
+  testID="0"
+>
+  <View
+    style={Object {}}
+  >
+    <Image
+      source={
+        Object {
+          "process": [Function],
+        }
+      }
+      style={
+        Object {
+          "height": 250,
+          "width": 200,
+        }
+      }
+    />
+  </View>
+</TouchableOpacity>
+`;

@@ -1,12 +1,14 @@
 import React from 'react';
 import {shallow} from 'enzyme';
+import Badge from '../Badge';
 import model from './model';
-import HomeTabbar from '../HomeTabbar';
 
-describe('HomeTabbar Component', () => {
+describe('Badge Component', () => {
   describe('Rendering', () => {
     it('should match to snapshot', () => {
-      const wrapper = shallow(<HomeTabbar buttons={model.buttons} />);
+      const wrapper = shallow(
+        <Badge cart={model.cart} cartTextTestID={model.cartTextTestID} />,
+      );
       expect(wrapper).toMatchSnapshot();
     });
   });

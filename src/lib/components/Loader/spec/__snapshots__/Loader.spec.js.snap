@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Loader Component Rendering should match to snapshot 1`] = `
+<View
+  style={
+    Object {
+      "alignSelf": "center",
+      "marginTop": 20,
+      "position": "absolute",
+    }
+  }
+>
+  <ActivityIndicator
+    animating={true}
+    color="#999999"
+    hidesWhenStopped={true}
+    size="small"
+  />
+</View>
+`;

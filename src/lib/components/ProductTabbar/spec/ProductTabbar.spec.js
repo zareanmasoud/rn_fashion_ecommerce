@@ -1,12 +1,14 @@
 import React from 'react';
 import {shallow} from 'enzyme';
+import ProductTabbar from '../ProductTabbar';
 import model from './model';
-import HomeTabbar from '../HomeTabbar';
 
-describe('HomeTabbar Component', () => {
+describe('ProductTabbar Component', () => {
   describe('Rendering', () => {
     it('should match to snapshot', () => {
-      const wrapper = shallow(<HomeTabbar buttons={model.buttons} />);
+      const wrapper = shallow(
+        <ProductTabbar buttons={model.buttons} addToCart={model.addToCart} />,
+      );
       expect(wrapper).toMatchSnapshot();
     });
   });

@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`TabbarButton Component Rendering should match to snapshot 1`] = `
+exports[`AddToCartButton Component Rendering should match to snapshot 1`] = `
 <TouchableOpacity
   activeOpacity={0.2}
   onPress={[Function]}
-  testID="tabbar_button"
+  testID="add_to_cart_button"
 >
   <View
     style={

@@ -4,20 +4,20 @@ const model = {
   buttons: {
     addWishlist: {
       id: 1,
-      press: () => {},
+      handlePress: () => {},
       src: R.images.backButton,
       text: R.strings.home.layout.mainTabbar.home,
     },
     fitting: {
       id: 2,
-      press: () => {},
+      handlePress: () => {},
       src: R.images.cartButton,
       text: R.strings.home.layout.mainTabbar.wishlist,
     },
-    addToCart(press) {
+    addToCart(addToCart) {
       return {
         id: 3,
-        press: () => press(),
+        handlePress: () => addToCart(),
         src: R.images.logoButton,
         text: R.strings.home.layout.mainTabbar.help,
       };

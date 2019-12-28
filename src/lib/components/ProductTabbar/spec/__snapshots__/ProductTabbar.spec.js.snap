@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductTabbar Component Rendering should match to snapshot 1`] = `
+<View
+  style={
+    Object {
+      "backgroundColor": "#ffffff",
+      "elevation": 1,
+      "flexDirection": "row",
+      "height": 107.14285714285714,
+      "justifyContent": "space-between",
+      "shadowColor": "black",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 0.1,
+      "shadowRadius": 0,
+    }
+  }
+>
+  <TabbarButton
+    handlePress={[Function]}
+    id="0"
+    key="0"
+    src={
+      Object {
+        "process": [Function],
+      }
+    }
+    text=""
+  />
+  <TabbarButton
+    handlePress={[Function]}
+    id="1"
+    key="1"
+    src={
+      Object {
+        "process": [Function],
+      }
+    }
+    text=""
+  />
+  <AddToCartButton
+    handlePress={[Function]}
+    id="2"
+    src={
+      Object {
+        "process": [Function],
+      }
+    }
+    text=""
+  />
+</View>
+`;

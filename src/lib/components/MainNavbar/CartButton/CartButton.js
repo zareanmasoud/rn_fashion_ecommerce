@@ -11,7 +11,7 @@ export default function CartButton({buttonTwo}: Props) {
   const {badge} = buttonTwo;
   return (
     <>
-      <NavbarButton press={buttonTwo.press} src={buttonTwo.src} />
+      <NavbarButton handlePress={buttonTwo.handlePress} src={buttonTwo.src} />
       <Badge {...badge} />
     </>
   );

@@ -1,23 +1,16 @@
 import React from 'react';
 import {shallow} from 'enzyme';
+import AddToCartButton from '../AddToCartButton';
 import model from './model';
-import TabbarButton from '../TabbarButton';
-
-// let mockOpenURL = jest.fn();
-//
-// // 1. Set openURL module function to jest.fn
-// jest.mock('Linking', () => ({
-//   openURL: mockOpenURL,
-// }));
 
 const mockHandlePress = jest.fn();
 mockHandlePress.mockReturnValue('Link on press invoked');
-const enhancedModel = model.tabbarButton(mockHandlePress);
+const enhancedModel = model.addToCart(mockHandlePress);
 
-describe('TabbarButton Component', () => {
+describe('AddToCartButton Component', () => {
   describe('Rendering', () => {
     it('should match to snapshot', () => {
-      const wrapper = shallow(<TabbarButton {...enhancedModel} />);
+      const wrapper = shallow(<AddToCartButton {...enhancedModel} />);
       expect(wrapper).toMatchSnapshot();
     });
   });
@@ -26,13 +19,13 @@ describe('TabbarButton Component', () => {
     describe('handlePress', () => {
       let wrapper;
       beforeEach(() => {
-        wrapper = shallow(<TabbarButton {...enhancedModel} />);
+        wrapper = shallow(<AddToCartButton {...enhancedModel} />);
         jest.clearAllMocks();
       });
 
       it('should call handlePress', () => {
         wrapper
-          .find({testID: 'tabbar_button'})
+          .find({testID: 'add_to_cart_button'})
           .first()
           .props()
           .onPress();
@@ -51,7 +44,7 @@ describe('TabbarButton Component', () => {
       //
       // it('should not call openURL if url is nor provided', () => {
       //   const innerInstance = shallow(
-      //     <TabbarButton label="test label" handlePress={mockHandlePress} />,
+      //     <AddToCartButton label="test label" handlePress={mockHandlePress} />,
       //   ).instance();
       //   innerInstance.handlePress();
       //   // 4. mockOpenURL should NOT be called as we have NOT passed in 'url' prop

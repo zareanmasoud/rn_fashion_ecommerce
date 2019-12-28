@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MyFlatList Component Rendering should match to snapshot 1`] = `
+<FlatList
+  contentContainerStyle={Object {}}
+  data={
+    Array [
+      Object {
+        "description": "Description",
+        "discount_code": "X9E2AD",
+        "id": "1",
+        "photo": Object {
+          "process": [Function],
+        },
+        "title": "Title",
+      },
+      Object {
+        "description": "Description",
+        "discount_code": "X9E2AD",
+        "id": "2",
+        "photo": Object {
+          "process": [Function],
+        },
+        "title": "Title",
+      },
+    ]
+  }
+  disableVirtualization={false}
+  horizontal={false}
+  initialNumToRender={10}
+  keyExtractor={[Function]}
+  maxToRenderPerBatch={10}
+  numColumns={1}
+  onEndReachedThreshold={2}
+  removeClippedSubviews={false}
+  renderItem={[Function]}
+  scrollEventThrottle={50}
+  updateCellsBatchingPeriod={50}
+  windowSize={21}
+/>
+`;

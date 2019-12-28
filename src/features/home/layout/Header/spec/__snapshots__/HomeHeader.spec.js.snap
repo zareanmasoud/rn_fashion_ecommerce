@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomeHeader Feature Rendering should match to snapshot 1`] = `
+<Fragment>
+  <withNavigation(MainNavbar)
+    noBackButton={true}
+  />
+</Fragment>
+`;
