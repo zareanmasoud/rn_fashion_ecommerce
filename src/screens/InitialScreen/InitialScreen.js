@@ -1,11 +1,12 @@
 import React from 'react';
 import {View} from 'react-native';
 import Loader from 'lib/components/Loader';
-import {withNavigation} from 'react-navigation';
 import styles from './styles';
 import {HOME_SCREEN} from '../routes/constants';
+import useNavigationContext from '../../context/UseNavigationContext';
 
-const InitialScreen = ({navigation}) => {
+const InitialScreen = () => {
+  const navigation = useNavigationContext();
   // temporarily
   setTimeout(() => navigation.navigate(HOME_SCREEN), 1000);
 
@@ -16,4 +17,4 @@ const InitialScreen = ({navigation}) => {
   );
 };
 
-export default withNavigation(InitialScreen);
+export default InitialScreen;

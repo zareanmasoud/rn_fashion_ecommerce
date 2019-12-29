@@ -1,11 +1,11 @@
-import React, {useContext} from 'react';
-import {withNavigation} from 'react-navigation';
+import React from 'react';
 import ProductTabbarComponent from 'lib/components/ProductTabbar';
+import {withNavigation} from 'react-navigation';
 import model from './model';
-import CartContext from '../../../../context/CartContext';
+import {useCartContext} from '../../../../context/CartContext';
 
 const ProductTabbar = () => {
-  const {addToCart} = useContext(CartContext);
+  const {addToCart} = useCartContext();
 
   return (
     <ProductTabbarComponent

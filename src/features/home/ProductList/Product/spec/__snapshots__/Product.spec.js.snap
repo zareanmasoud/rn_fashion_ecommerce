@@ -1,7 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Product Feature Rendering should match to snapshot 1`] = `
-<ContextConsumer>
-  <Component />
-</ContextConsumer>
+<Item
+  handlePress={[Function]}
+  index={0}
+  key="0"
+  photo={
+    Object {
+      "process": [Function],
+    }
+  }
+/>
 `;

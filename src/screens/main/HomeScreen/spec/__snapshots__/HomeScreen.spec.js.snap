@@ -10,6 +10,6 @@ exports[`HomeScreen Rendering should match to snapshot 1`] = `
     testID="View"
   />
   <ProductList />
-  <withNavigation(HomeTabbar) />
+  <HomeTabbar />
 </ScreenContentFrame>
 `;

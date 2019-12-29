@@ -1,7 +1,42 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`HomeTabbar Feature Rendering should match to snapshot 1`] = `
-<ContextConsumer>
-  <Component />
-</ContextConsumer>
+<HomeTabbar
+  buttons={
+    Object {
+      "help": Object {
+        "handlePress": [Function],
+        "id": 2,
+        "src": Object {
+          "process": [Function],
+        },
+        "text": "Help",
+      },
+      "home": Object {
+        "handlePress": [Function],
+        "id": 0,
+        "src": Object {
+          "process": [Function],
+        },
+        "text": "Home",
+      },
+      "profile": Object {
+        "handlePress": [Function],
+        "id": 3,
+        "src": Object {
+          "process": [Function],
+        },
+        "text": "Profile",
+      },
+      "wishlist": Object {
+        "handlePress": [Function],
+        "id": 1,
+        "src": Object {
+          "process": [Function],
+        },
+        "text": "Wishlist",
+      },
+    }
+  }
+/>
 `;

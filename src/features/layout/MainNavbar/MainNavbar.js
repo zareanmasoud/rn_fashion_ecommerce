@@ -11,7 +11,6 @@ type Props = {
 
 const MainNavbar = ({navigation, noBackButton, cartTextTestID}: Props) => {
   const {cart} = useCartContext();
-
   const backButton = {
     backButton: model.backButton(navigation),
   };
