@@ -1,8 +1,8 @@
-import backButton from './images/back_button.png';
-import cartButton from './images/cart_button.png';
-import logoButton from './images/logo_button.png';
-import product1 from './images/product_1.png';
-import product2 from './images/product_2.png';
+import backButton from 'res/images/images/back-button.png';
+import cartButton from 'res/images/images/cart-button.png';
+import logoButton from 'res/images/images/logo-button.png';
+import product1 from 'res/images/images/product-1.png';
+import product2 from 'res/images/images/product-2.png';
 
 const images = {
   backButton,

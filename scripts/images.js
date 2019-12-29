@@ -16,16 +16,27 @@ const imageFileNames = () => {
   return Array.from(new Set(array));
 };
 
-const generate = () => {
-  const properties = imageFileNames()
-    .map(name => {
-      return `${name}: require('./images/${name}.png')`;
-    })
-    .join(',\n  ');
-
-  const string = `export const images = {
-  ${properties}
+const getCamelCase = hyphenCase => {
+  return hyphenCase.replace(/-([a-zA-Z0-9])/g, g => {
+    return g[1].toUpperCase();
+  });
 };
+
+const generate = () => {
+  let properties = '';
+  const imports = imageFileNames()
+    .map(name => {
+      const property = getCamelCase(name);
+      properties += `  ${property},\n`;
+      return `import ${property} from 'res/images/images/${name}.png';`;
+    })
+    .join('\n');
+  const string = `${imports}
+  
+const images = { 
+${properties}};
+
+export default images;
 `;
 
   fs.writeFileSync('src/res/images/images.js', string, 'utf8');
