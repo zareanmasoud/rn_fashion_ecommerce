@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ButtonOne Component Rendering should match to snapshot 1`] = `
+<NavbarButton
+  handlePress={[Function]}
+  src={
+    Object {
+      "process": [Function],
+    }
+  }
+/>
+`;
