@@ -17,20 +17,15 @@ exports[`AddToCartButton Component Rendering should match to snapshot 1`] = `
       }
     }
   >
-    <Image
-      source={
-        Object {
-          "process": [Function],
-        }
-      }
+    <Text
       style={
         Object {
-          "height": 42.857142857142854,
-          "tintColor": "#4d4d4dff",
-          "width": 42.857142857142854,
+          "color": "#0C222B",
         }
       }
-    />
+    >
+      Add to Cart
+    </Text>
   </View>
 </TouchableOpacity>
 `;

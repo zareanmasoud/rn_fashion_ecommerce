@@ -1,6 +1,5 @@
 import {StyleSheet} from 'react-native';
 import R from 'res/R';
-import {scale} from 'lib/utils/scaling';
 
 const styles = StyleSheet.create({
   buttonView: {
@@ -10,10 +9,8 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     paddingHorizontal: 20,
   },
-  buttonImg: {
-    width: scale(20),
-    height: scale(20),
-    tintColor: R.colors.darkGrayTint,
+  buttonText: {
+    color: R.colors.text,
   },
 });
 

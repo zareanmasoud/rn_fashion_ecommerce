@@ -5,21 +5,20 @@ const model = {
     addWishlist: {
       id: 1,
       handlePress: () => {},
-      src: R.images.backButton,
+      src: R.images.wishlistButton,
       text: R.strings.home.layout.mainTabbar.home,
     },
     fitting: {
       id: 2,
       handlePress: () => {},
-      src: R.images.cartButton,
+      src: R.images.hangerButton,
       text: R.strings.home.layout.mainTabbar.wishlist,
     },
     addToCart(addToCart) {
       return {
         id: 3,
         handlePress: () => addToCart(),
-        src: R.images.logoButton,
-        text: R.strings.home.layout.mainTabbar.help,
+        text: R.strings.product.tabbar.addToCart,
       };
     },
   },

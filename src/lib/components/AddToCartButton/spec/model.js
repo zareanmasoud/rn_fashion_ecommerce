@@ -5,8 +5,7 @@ const model = {
     return {
       id: 3,
       handlePress: () => addToCart(),
-      src: R.images.logoButton,
-      text: R.strings.home.layout.mainTabbar.help,
+      text: R.strings.product.tabbar.addToCart,
     };
   },
 };

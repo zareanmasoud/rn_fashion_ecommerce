@@ -21,6 +21,11 @@ const strings = {
       button: 'Read',
     },
   },
+  product: {
+    tabbar: {
+      addToCart: 'Add to Cart',
+    },
+  },
 };
 
 export default strings;

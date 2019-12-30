@@ -1,18 +1,17 @@
 import React from 'react';
-import {Image, TouchableOpacity, View} from 'react-native';
+import {Text, TouchableOpacity, View} from 'react-native';
 import styles from './styles';
 
 type Props = {
   handlePress: Function,
-  src: string,
-  // text: string,
+  text: string,
 };
 
-export default function AddToCartButton({handlePress, src}: Props) {
+export default function AddToCartButton({handlePress, text}: Props) {
   return (
     <TouchableOpacity testID="add_to_cart_button" onPress={() => handlePress()}>
       <View style={styles.buttonView}>
-        <Image source={src} style={styles.buttonImg} />
+        <Text style={styles.buttonText}>{text}</Text>
       </View>
     </TouchableOpacity>
   );
