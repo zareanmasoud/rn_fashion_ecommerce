@@ -10,10 +10,13 @@ const styles = StyleSheet.create({
     paddingVertical: 5,
     paddingHorizontal: 20,
   },
-  buttonImg: {
-    width: scale(20),
-    height: scale(20),
-    tintColor: R.colors.darkGrayTint,
+  buttonImg(logoMode) {
+    return {
+      width: scale(logoMode ? 70 : 20),
+      height: scale(logoMode ? 15 : 20),
+      resizeMode: 'contain',
+      tintColor: R.colors.darkGrayTint,
+    };
   },
 });
 

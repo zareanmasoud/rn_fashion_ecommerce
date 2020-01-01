@@ -5,14 +5,19 @@ import styles from './styles';
 type Props = {
   handlePress: Function,
   src: string,
+  logoMode?: boolean,
 };
 
-export default function NavbarButton({handlePress, src}: Props) {
+export default function NavbarButton({handlePress, src, logoMode}: Props) {
   return (
     <TouchableOpacity onPress={() => handlePress()}>
       <View style={styles.buttonView}>
-        <Image source={src} style={styles.buttonImg} />
+        <Image source={src} style={styles.buttonImg(logoMode)} />
       </View>
     </TouchableOpacity>
   );
 }
+
+NavbarButton.defaultProps = {
+  logoMode: false,
+};
