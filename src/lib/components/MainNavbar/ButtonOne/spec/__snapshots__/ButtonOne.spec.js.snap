@@ -3,6 +3,7 @@
 exports[`ButtonOne Component Rendering should match to snapshot 1`] = `
 <NavbarButton
   handlePress={[Function]}
+  mode="default"
   src={
     Object {
       "process": [Function],

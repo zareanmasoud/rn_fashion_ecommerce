@@ -4,6 +4,7 @@ exports[`CartButton Component Rendering should match to snapshot 1`] = `
 <Fragment>
   <NavbarButton
     handlePress={[Function]}
+    mode="default"
     src={
       Object {
         "process": [Function],

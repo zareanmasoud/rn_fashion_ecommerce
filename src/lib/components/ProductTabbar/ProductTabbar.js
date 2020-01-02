@@ -12,7 +12,7 @@ type Props = {
 
 const ProductTabbar = ({buttons, addToCart}: Props) => {
   const TabbarButtons = buttons.map(button => (
-    <TabbarButton {...button} key={button.id} />
+    <TabbarButton {...button} key={button.id} mode="product" />
   ));
 
   return (

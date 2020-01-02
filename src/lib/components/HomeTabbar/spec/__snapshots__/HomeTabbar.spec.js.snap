@@ -22,6 +22,7 @@ exports[`HomeTabbar Component Rendering should match to snapshot 1`] = `
   <TabbarButton
     id={0}
     key="0"
+    mode="home"
     press={[Function]}
     src={
       Object {
@@ -33,6 +34,7 @@ exports[`HomeTabbar Component Rendering should match to snapshot 1`] = `
   <TabbarButton
     id={1}
     key="1"
+    mode="home"
     press={[Function]}
     src={
       Object {
@@ -44,6 +46,7 @@ exports[`HomeTabbar Component Rendering should match to snapshot 1`] = `
   <TabbarButton
     id={2}
     key="2"
+    mode="home"
     press={[Function]}
     src={
       Object {
@@ -55,6 +58,7 @@ exports[`HomeTabbar Component Rendering should match to snapshot 1`] = `
   <TabbarButton
     id={3}
     key="3"
+    mode="home"
     press={[Function]}
     src={
       Object {

@@ -10,6 +10,8 @@ exports[`TabbarButton Component Rendering should match to snapshot 1`] = `
     style={
       Object {
         "alignItems": "center",
+        "backgroundColor": "transparent",
+        "borderRadius": 0,
         "height": "100%",
         "justifyContent": "center",
         "paddingHorizontal": 20,
